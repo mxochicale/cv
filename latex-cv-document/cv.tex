@@ -1,0 +1,292 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%% https://www.ctan.org/pkg/moderncv?lang=en
+\documentclass[10pt,a4paper,roman]{moderncv}
+\moderncvstyle{casual}                             % style options are 'casual'
+                                                    % (default), 'classic', 'oldstyle' and
+                                                    % 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default),
+                                                  % 'orange', 'green', 'red', 'purple',
+                                                  % 'grey' and 'black'
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+% [REF] http://tex.stackexchange.com/questions/588/how-can-i-change-the-margins-for-only-part-of-the-text
+
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Xochicale}{\textbf{#1}}{#1}%
+}
+% Using my_unsrt.bst
+% [REF] http://tex.stackexchange.com/questions/33330/make-one-authors-name-bold-every-time-it-shows-up-in-the-bibliography
+
+
+\usepackage[scale=0.93]{geometry}% adjust the page margins
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with
+%the dates
+
+%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force
+%the width allocated to your name and avoid line breaks. be careful though, the length is
+%normally calculated to avoid any overlap with your personal info; use this at your own
+%typographical risks...
+
+
+\name{Miguel}{P. Xochicale}
+\title{Curriculum Vitae -- March 2017}
+
+
+% \quote{
+%
+% } % optional, remove / comment the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%
+\begin{document}
+
+
+%-----       resume       ---------------------------------------------------------
+%
+%
+\makecvtitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Contact}
+%
+% For more icons
+% http://mirror.ox.ac.uk/sites/ctan.org/fonts/fontawesome/doc/fontawesome.pdf
+
+\begin{changemargin}{2.4cm}{0.5cm}
+  \begin{minipage}{.4\textwidth}
+    \begin{description}
+     \item [\faPhone ]    +44 (0) 121 414 314 1 (UK)
+     \item[\faEnvelope]  \href{mailto:perez.xochicale@gmail.com}{perez.xochicale@gmail.com}
+     \item[\faHome]  \href{http://mxochicale.github.io}{http://mxochicale.github.io}
+    % \item[Address:] South Parks Rd, OX1 3UD
+     \end{description}
+  \end{minipage}
+  \begin{minipage}{.4\textwidth}
+  \begin{description}
+   \item[\faGithub]  \href{https://github.com/mxochicale}{mxochicale}
+   \item[\faTwitter ] \href{https://twitter.com/_mxochicale}{@\textunderscore mxochicale}
+  %  \item[\faLinkedin]
+  %  \item[ORCID:] \href{http://orcid.org/0000-0002-8225-7517}{0000-0002-8225-7517}
+   \end{description}
+  \end{minipage}
+\end{changemargin}
+% \vspace{10pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Research Interests}
+\begin{changemargin}{2.4cm}{0.5cm}
+I am interested in the fields of Human-Robot Interaction and Human Activity Recognition.
+As a doctoral researcher I am gaining deeper understanding of the variability
+of human movements using Non-linear Dynamics and Machine Learning Algorithms
+in order to create novel analysis and interpretation of signals
+collected through a network of Inertial Measurement Units.
+\end{changemargin}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Education}
+\cventry{11/2014 -- Present}{Ph.D. in Human-Robot Interaction}{University of Birmingham}{UK}{}
+  {Thesis: Automatic Classification of Movement Variability in the context of Human-Robot Interaction
+  \href{https://github.com/mxochicale/PhD}{\faGithubAlt}
+   \\ Advisors: Professor Chris Baber and  Professor Martin Russell  }
+
+\cventry{09/2004 -- 09/2006}{M.Sc. in Electronics}
+  {Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica}{M\'exico}{}
+  {Thesis: Digital Filter FIR with less multipliers
+  \href{https://github.com/mxochicale/publications/blob/master/Thesis/M.Sc./doc/MPXochicale_MScThesis-2016.pdf}{\faFilePdfO}
+  \href{https://github.com/mxochicale/publications/tree/master/Thesis/M.Sc.}{\faGithubAlt}
+  \\ Advisor: Gordana Jovanovic Dolecek}
+
+\cventry{08/1999 -- 09/2004}{B.Eng. in Electronics}{Instituto Tecnol\'ogico de Puebla}{M\'exico}{}
+  {Thesis: Speed control in LabVIEW for a two-degrees-of-freedom Robot.
+  \href{https://github.com/mxochicale/publications/blob/master/Thesis/B.Eng./doc/MPXochicale_BachelorEngThesis-2003.pdf}{\faFilePdfO}
+  \href{https://github.com/mxochicale/publications/tree/master/Thesis/B.Eng.}{\faGithubAlt}
+  \\ Advisor: M.Sc. Jos\'e Esteban Torres Le\'on.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\nocite{*}
+\bibliographystyle{my_unsrt}
+\bibliography{publications}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Teaching Experience}
+\cventry{01/2017--12/2017}{Teaching Associate}
+{University of Birmingham}{UK}{}
+{Matlab Laboratories. Lecturer: Dr Edward Tarte }
+
+\cventry{08/2016--12/2016}{Teaching Associate}
+{University of Birmingham}{UK}{}
+{Computing for Engineering. Lecturer: Dr Sridhar Pammu}
+
+\cventry{10/2014--12/2014}{Teaching Associate}
+{University of Birmingham}{UK}{}
+{Small Embedded Systems. Lecturer: Professor Chris Baber}
+
+\cventry{08/2013--12/2013}{Teacher}
+{Bilingual Hight School at TECMilenio University}{Puebla,M\'exico}{}
+{Courses:
+Information Technology \href{https://sites.google.com/site/perezxochicale/teaching/iit}{\faExternalLink},
+Euclidian Geometry  \href{https://sites.google.com/site/perezxochicale/teaching/euclidean-geometry}{\faExternalLink}
+and
+Microsoft Office Access \href{https://sites.google.com/site/perezxochicale/teaching/moa}{\faExternalLink}
+}
+
+\cventry{Spring 2012 -- Autumn 2012}{Invited Lecturer in Mechatronic Engineering}
+{Universidad Madero}{Puebla, M\'exico}{}
+{Courses: Fundamentals of Automation
+\href{https://sites.google.com/site/perezxochicale/digital-electronics}{\faExternalLink},
+Industrial Electronics \href{https://sites.google.com/site/perezxochicale/ie}{\faExternalLink},
+Research Projects \href{https://sites.google.com/site/perezxochicale/latex/thesistemplate}{\faExternalLink},
+Metrology \href{https://sites.google.com/site/perezxochicale/metrology}{\faExternalLink},
+Physics \href{http://goo.gl/fffnG}{\faExternalLink},
+Computer Integrating Manufacturing, and Power Electronics
+}
+
+\cventry{Spring 2007 -- Spring 2012}{Invited Lecturer in Electronic Engineering}
+{Universidad Iberoamericana Puebla}{M\'exico}{}
+{Courses: Stochastic Processes Course
+\href{https://sites.google.com/site/perezxochicale/stochastic-processes-course}{\faExternalLink},
+Digital Signal Processing
+\href{https://sites.google.com/site/perezxochicale/digital-signal-processing-course}{\faExternalLink}
+and Analog Filters.
+}
+
+\cventry{08/2006 -- 06/2007}{Invited Lecturer in Mechatronic and Electric  Engineering}
+{Instituto Tecnol\'ogico Superior de Atlixco}{M\'exico}{}
+{Courses: Electronics I, Numerical Methods, and Electricity and Magnetism. (January-June 2007.)
+Electricity and Magnetism, and Electricity and Industrial Electronics ( August-December 2006)
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Professional Experience}
+
+\cventry{02/2013 -- 08/2013}{Research Assistant}{INAOE's Robotics Laboratory}{M\'exico}{}
+{Detailed achievements: I develop a Human-Robot Interaction Demo Dance which  was based on a ZSTAR3 Radio
+Frequency single three-axis accelerometer and a Patrolbot mobile robot.
+For the demo, I explored four gestures wearing the accelerometer in the left wrist
+in order to create simple dance activities with the Patrolbot mobile robot.
+For further information go to \href{https://sites.google.com/site/perezxochicale/projects/demodance}{\faExternalLink}.}
+
+\cventry{01/2012 -- 01/2013}{Invited Lecturer}
+{Universidad Madero}{Puebla, M\'exico}{}
+{Detailed achievements:
+I proposed and supervised the following students' projects: Haptic Referee Glove,
+ Lightmetre and Pychometre using Arduino, Smart Irrigation, Persistent Of Vision Bicycle Wheel
+ and a Delta Robot Structure.
+\href{https://sites.google.com/site/perezxochicaleprojects/studentprojects}{\faExternalLink}
+Additionally, I proposed and designed a Mechatronic Laboratory which includes a benchmark for
+Mechatronic's laboratories in M\'exico and Puebla, a 3D layout design and minimal
+requirements of hardware and software for the laboratory.
+For further information go to \href{https://sites.google.com/site/perezxochicaleprojects/mechatronicslaboratorydesign}{\faExternalLink}.
+}
+
+\cventry{09/2003 -- 03/2004}{Internship}
+{INAOE}{M\'exico}{}
+{Detailed achievements:
+I implemented a speed control for a two-degree-of-freedom Robot with Microcontrollers
+PIC 16F84 and 16F877 that made communication via RS-232 using Virtual Instruments on LabVIEW.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Awards and Honours}
+
+\cvitem{11/01/2017}{
+I was selected to present advances of my Ph.D in the second forum of Mexican Talent INNOVATION MATCH MX.
+The title of my talk is: ``Towards the improvement of Healthy Ageing with Humanoid Robos''.
+\href{http://innovationmatchmx.com/language/en/}{\faExternalLink}.
+\href{https://sites.google.com/site/perezxochicale/docs/MScThesis.pdf}{\faFilePdfO}
+}
+
+\cvitem{16-18/06/2016}{
+I won a shared first prize for presenting one of the two best posters at
+the XIV Symposium of Mexican Students in the UK at University of Edinburgh.
+\href{https://github.com/mxochicale/symposiummx/tree/master/2016}{\faExternalLink}.}
+
+\cvitem{20-24/07/2015}{My project of a low-cost robot was selected amoung 125 applications received from 35 countries
+and presented at the first international public entrepreneurship program in Mexico (MECATE 2015)
+\href{https://github.com/mxochicale/symposiummx/tree/master/2016}{\faExternalLink}
+\href{https://www.youtube.com/watch?v=VjVGnwD422g}{\faYoutube}.}
+
+\cvitem{11/2014-11/2017}{
+Full Ph.D. Scholarship in the UK from the Mexican National Council on Science and Technology (CONACyT).}
+
+\cvitem{25-27/05/2013}{
+Markovito, a service robot, won the first place at the Mexican Tournament of Robotics 2013 in the cathegory at HOME
+where I presented a Human-Robot Interation Dance Demo \href{https://www.youtube.com/watch?v=Kw-lZam_qZI}{\faYoutube}. }
+
+\cvitem{09/2004-09/2006}{
+Full M.Sc. Scholarship in M\'exico from the CONACyT. }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Languages}
+\cvitemwithcomment{English}{IETLS Band Score 6.0: Listening 6.0, Reading 7.0, Writing 6.0, Speaking 5.5.}{11/01/14}
+\cvitemwithcomment{Spanish}{Native tongue}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Technical Skills}
+\cvitem{General}{
+Graphic design (Inkscape); Artificial Neural Networks(e.g., TensorFlow); Inertial Measurament Units(data collection and analysis)}
+\cvitem{Programming}{R, MATLAB, GNU-Octave, GNU-emacs, C, C++,
+Kdevelop, LabVIEW, Arduino, Processing, \LaTeX, the shell and  Robot Operating System (ROS).
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%
+\section{Extracurricular Activities}
+
+
+\cvitem{01-06/2016}{
+I am developing a workshop to teach children how to build low cost robots for outreach communities at the University of Birmingham.
+}
+
+\cvitem{11/2013}{
+I like to play around with the Kinect sensor and build low-costs robots
+\href{https://sites.google.com/site/perezxochicale/projects/iss}{\faExternalLink}. }
+
+\cvitem{06/2013}{
+I founded LibrE Robotics, a non-profit organization, to transfer knowledge in Robotics
+for children to build conditions for a better world  \href{https://sites.google.com/site/librerobotics/}{\faExternalLink}. }
+
+
+\end{document}

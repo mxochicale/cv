@@ -15,6 +15,14 @@ make
 
 
 
+# TO-DO List
+
+* Create Repository for INNOVATION MATCH MX 2017
+* Create repository for outreach activities
+  * Create document using [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article) template
+  * Use [severin-lemaignan](https://github.com/severin-lemaignan/presentation-cognitive-robotics) template for the presentation
+* Create Repository for OrganisingProjects using [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article) template
+
 
 # Useful Sources
 1. Olivia Guest's CV is very inspiring.
