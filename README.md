@@ -17,11 +17,13 @@ make
 
 # TO-DO List
 
-* Create Repository for INNOVATION MATCH MX 2017
+* Create GitHub for LibrE Robotics (include all versions of Robit, presentations, documents, etc)
+* Create GitHub for my projects
 * Create repository for outreach activities
   * Create document using [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article) template
-  * Use [severin-lemaignan](https://github.com/severin-lemaignan/presentation-cognitive-robotics) template for the presentation
 * Create Repository for OrganisingProjects using [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article) template
+
+
 
 
 # Useful Sources
@@ -31,3 +33,5 @@ https://github.com/oliviaguest/cv
 some of the features of the Awesome CV which has templates
 for CV, Résumé or Cover Letter
 https://github.com/posquit0/Awesome-CV
+3. Severin Lemaignan's CV
+https://github.com/severin-lemaignan/cv
