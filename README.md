@@ -1,37 +1,23 @@
-CV Source Repository
+My Curriculum Vitae
 ====
 
-
-Command lines for building the LaTex CV documents
+Command lines for building the LaTeX CV document
 
 ```
 cd latex-template
 make
+make clean
 ```
 
-# TO-DO List
-
-* next update: commit -m "february2017"
-
-
-
-# TO-DO List
-
-* Create GitHub for LibrE Robotics (include all versions of Robit, presentations, documents, etc)
+# TODO
 * Create GitHub for my projects
-* Create repository for outreach activities
-  * Create document using [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article) template
-* Create Repository for OrganisingProjects using [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article) template
-
-
+  * LibrE Robotics (include all versions of Robit, presentations, documents, etc)
+  * \url{http://OrigamiRobotics.github.ai}
+* For documentation, use the template of [ReScience-submission](https://github.com/ReScience/ReScience-submission/tree/master/article)
 
 
 # Useful Sources
-1. Olivia Guest's CV is very inspiring.
-https://github.com/oliviaguest/cv
-2. For creating a fancy CV, I believe it would be good to replicate
-some of the features of the Awesome CV which has templates
-for CV, Résumé or Cover Letter
-https://github.com/posquit0/Awesome-CV
-3. Severin Lemaignan's CV
-https://github.com/severin-lemaignan/cv
+1. [Olivia Guest's CV](https://github.com/oliviaguest/cv) is very inspiring.
+2. [Awesome-CV](https://github.com/posquit0/Awesome-CV) has very cool
+template for CV, Résumé or Cover Letter
+3. [Severin Lemaignan's CV](https://github.com/severin-lemaignan/cv)

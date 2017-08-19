@@ -1,13 +1,24 @@
 %% start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %% https://www.ctan.org/pkg/moderncv?lang=en
+
+
 \documentclass[10pt,a4paper,roman]{moderncv}
 \moderncvstyle{casual}                             % style options are 'casual'
                                                     % (default), 'classic', 'oldstyle' and
                                                     % 'banking'
+%% Choosing color
 \moderncvcolor{black}                               % color options 'blue' (default),
                                                   % 'orange', 'green', 'red', 'purple',
                                                   % 'grey' and 'black'
+
+%% Another Options for colours
+% \moderncvtheme[green]{classic}                % idem
+% \definecolor{color0}{rgb}{0,0,0}% black
+% \definecolor{color1}{rgb}{0.38,0.69,0.19}% green
+% \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
@@ -31,8 +42,10 @@
 %typographical risks...
 
 
+
 \name{Miguel}{P. Xochicale}
-\title{Curriculum Vitae -- July 2017}
+\title{Curriculum Vitae -- August 2017}
+
 
 
 % \quote{
@@ -81,8 +94,8 @@
   \end{minipage}
   \begin{minipage}{.4\textwidth}
   \begin{description}
-   \item[\faGithub]  \href{https://github.com/mxochicale}{mxochicale}
    \item[\faTwitter ] \href{https://twitter.com/_mxochicale}{@\textunderscore mxochicale}
+   \item[\faGithub]  \href{https://github.com/mxochicale}{mxochicale}
   %  \item[\faLinkedin]
    \item[ORCID:] \href{http://orcid.org/0000-0002-8225-7517}{0000-0002-8225-7517}
    \end{description}
@@ -100,9 +113,9 @@
 \begin{changemargin}{2.4cm}{0.5cm}
 I am interested in the fields of Human-Robot Interaction and Human Activity Recognition.
 As a doctoral researcher I am gaining deeper understanding of the variability
-of human movements using Non-linear Dynamics and Deep Learning Algorithms
-in order to create novel analysis and interpretation of signals
-collected through a network of Inertial Measurement Units.
+of human movements and facial expressions using Non-linear Dynamics and Deep Learning.
+% in order to create novel analysis and interpretation of signals collected
+% through a network of Inertial Measurement Units.
 \end{changemargin}
 
 
@@ -273,31 +286,31 @@ Full M.Sc. Scholarship in M\'exico from the CONACyT. }
 %%%
 \section{Technical Skills}
 \cvitem{General}{
-Artificial Neural Networks(e.g., TensorFlow);
+Deep Learning (e.g., TensorFlow);
 Inertial Measurament Units(data collection and analysis);
 Graphic design (Inkscape)
 }
-\cvitem{Programming}{R, python, GNU-Octave, GNU-emacs, C, C++,
-Arduino, Processing, \LaTeX, the shell and  Robot Operating System (ROS), MATLAB and LabVIEW.}
+\cvitem{Programming}{R, python,
+Robot Operating System (ROS),
+C, C++,
+Arduino, Processing, \LaTeX, the shell,
+GNU-emacs,
+GNU-Octave, MATLAB and LabVIEW.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
 %%%
-\section{Extracurricular Activities}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Scientific Engagement}
+\cventry{2017--2018}{Seminar of Science Coordinator}{}{}{for the Mexican Society at University of Birmingham}{\url{https://MexicanSocietyUoB.github.io/Seminars/}}  % arguments 3 to 6 are optional
+\cventry{2014-2018}{Outreach Activities to teach children how to build low
+cost robots}{University of Birmingham} {} {} {}
+\cventry{2013--2018}{Founder of LibrE Robotics}{a non-profit organization, to
+transfer knowledge of Educative Robotics for children to build conditions for a
+better world}{}{}{\url{https://sites.google.com/site/LibreRobotics/}}
 
 
-\cvitem{01-06/2016}{
-I am developing a workshop to teach children how to build low cost robots for outreach communities at the University of Birmingham.
-}
-
-\cvitem{11/2013}{
-I made an Interactive Solar System with the Kinect sensor V1
-\href{https://sites.google.com/site/perezxochicale/projects/iss}{\faExternalLink}. }
-
-\cvitem{06/2013}{
-I founded LibrE Robotics, a non-profit organization, to transfer knowledge in Robotics
-for children to build conditions for a better world  \href{https://sites.google.com/site/librerobotics/}{\faExternalLink}. }
 
 
 \end{document}
