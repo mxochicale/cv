@@ -1,0 +1,403 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt,a4paper,sans]{moderncv}        
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper',
+% 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font
+% family ('sans' and 'roman')
+
+% moderncv themes \moderncvstyle{casual} % style options are 'casual' (default),
+% 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking}                             % style options are 'casual'
+                                                    % (default), 'classic', 'oldstyle' and
+                                                    % 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default),
+                                                  % 'orange', 'green', 'red', 'purple',
+                                                  % 'grey' and 'black'
+
+%\renewcommand{\familydefault}{\sfdefault} % to set the default font; use '\sfdefault' for
+%the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one
+%page
+
+% character encoding \usepackage[utf8]{inputenc} % if you are not using xelatex ou
+%lualatex, replace by the encoding you are using
+
+%\usepackage{CJKutf8} % if you need to use CJK to typeset your resume in Chinese, Japanese
+%or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with
+%the dates
+
+%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force
+%the width allocated to your name and avoid line breaks. be careful though, the length is
+%normally calculated to avoid any overlap with your personal info; use this at your own
+%typographical risks...
+
+% personal data
+\name{Miguel A.}{Perez-Xochicale}
+%\name{Miguel A.}{P\'erez-Xochicale}
+
+% \title{Resumé title}    % optional, remove / comment the line if not wanted
+% \address{47 Cedarhurst}{B32 2JZ Birmingham}{UK}
+\address{}{}{}
+
+% optional, remove / comment the line if not wanted; 
+% the "postcode city" and "country" arguments can be omitted or provided empty
+
+\phone[mobile]{0744 28 17 616}                   % optional, remove / comment the line if
+                                                 % not wanted; the optional "type" of the
+                                                 % phone can be "mobile" (default),
+                                                 % "fixed" or "fax"
+\phone[fixed]{+44~(0)~121 41 47511}
+
+% \phone[fax]{+3~(456)~789~012}
+\email{perez.xochicale@gmail.com}                               % optional, remove /
+                                                                % comment the line if not
+                                                                % wanted
+
+% \email{map479@bham.ac.uk} % optional, remove / comment the line if not wanted
+\homepage{sites.google.com/site/perezxochicale/}                         % optional,
+                                                                         % remove /
+                                                                         % comment the
+                                                                         % line if not
+                                                                         % wanted
+\social[github]{mxochicale}                              % optional, remove / comment the
+                                                         % line if not wanted
+
+%\social[linkedin]{miguel-perez-xochicale/102/74/957}                        % optional,
+                                                                            % remove /
+                                                                            % comment the
+                                                                            % line if not
+                                                                            % wanted
+
+\social[twitter]{mperezxochicale}                             % optional, remove / comment
+                                                              % the line if not wanted
+
+
+% \extrainfo{additional information} % optional, remove / comment the line if not wanted
+
+\photo[84pt][0.4pt]{11370681}                       % optional, remove / comment the line
+                                                    % if not wanted; '64pt' is the height
+                                                    % the picture must be resized to,
+                                                    % 0.4pt is the thickness of the frame
+                                                    % around it (put it to 0pt for no
+                                                    % frame) and 'picture' is the name of
+                                                    % the picture file
+
+\quote{
+I am a hard working and enthusiastic person. Principles of responsability, 
+human kidness and honesty guide me through my life decisions.
+} % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful
+% if you make citations in your resume
+
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Research Goals} 
+Currently as a doctoral researcher, I am gaining a deeper understanding of Nonlinear 
+Dynamics to create novel analysis and interpretation of motion capture systems.
+I am deeply insterested in the field of Human Activity Recognition and Human-Robot
+Interaction.
+    
+   
+
+\section{Education}
+
+\cventry{Nov. 2014 -- Present}{University of Birmingham}{PhD in Electronic, Electrical
+  and Computer Engineering}{Birmingham, UK}{\textit{}} 
+  {Thesis: Automatic Non-linear Nonlinear Dynamics Approach to Human Activity Recognition
+   \\ Advisors: Chris Baber and Neil Cooke} 
+  %arguments 3 to 6 can be left empty
+
+\cventry{Sep. 2004 -- Sep. 2006}{National Institute of Astrophysics, Optics and
+  Electronics}{Master Degree in Electronics}{Puebla, Mexico}{\textit{}} {Thesis:
+  Digital Filter FIR with less multipliers
+  \href{https://sites.google.com/site/perezxochicale/docs/MScThesis.pdf}{\faFilePdfO}
+  \\ Advisor: Gordana Jovanovic Dolecek\\ Professional license: 6294064}
+% arguments 3 to 6 can be left empty
+
+\cventry{Aug. 1999 -- Sep. 2004}{Technological Institute of Puebla}{Bachelor degree
+  in Electronic Engineering}{Puebla, Mexico}{\textit{}} 
+  {Thesis: Speed control of a two degrees of freedom Robot
+  \href{https://sites.google.com/site/perezxochicale/docs/BachelorProject.pdf}{\faFilePdfO}
+  %\\ Advisor: Esteban Torres Leon
+  \\ Professional license: 4907567}
+% arguments 3 to 6 can be left empty
+
+\section{Experience}
+
+
+
+\subsection{Professional}
+
+%%% @ Robotis Laboratory @ INAOE
+\cventry{February 2013 -- August 2013}{Resaerch Assistant at the Robotics Laboratory }
+{Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica}{Tonantzintla, Mexico}{}
+{A Human-Robot Interaction Demo Dance 
+\newline{}
+Detailed achievements:%
+\begin{itemize}%
+\item This work presents a Human-Robot Interaction Demo Dance which is based on a 
+ZSTAR3 Radio Frequency single three-axis accelerometer and a Patrolbot mobile robot. 
+The ZSTAR3 sensor board is located in the position of the left wrist. With the wereable accelerometer, 
+we explores four gestures of the arm in order to control the mobile robot.
+\href{https://sites.google.com/site/perezxochicale/projects/demodance}{\faGlobe}
+\end{itemize}
+}
+
+
+%%% @ UMAD
+\cventry{January 2012 -- January 2013}{Resaerch Assistant at the Robotics Laboratory }
+{Madero University}{Puebla, Mexico}{}
+{Mechatronic Laboratory Proposal
+\newline{}
+Detailed achievements:%
+\begin{itemize}%
+\item A Design of a Mechatronic Laboratory was elaborated as a proposal project for the
+  Mechatronic engineering career at Madero University in order to offer adequate
+  facilities to students, professors and researchers
+  \href{https://sites.google.com/site/perezxochicaleprojects/mechatronicslaboratorydesign}{\faGlobe}
+\end{itemize}
+}
+
+
+%%% @ Profesional  @ INAOE
+\cventry{August 2003 -- March 2004}{Profesional Resident: 6 month full time in a research institution}
+{Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica}{Tonantzintla, Mexico}{}
+{Speed control of a two degrees of freedom Robot
+\newline{}
+Detailed achievements:%
+\begin{itemize}%
+\item Programming a Microcontroller PIC 16F84 and 16F877
+\item Programming Virtual Instruments with LabVIEW
+\item Serial Communication RS-232
+\end{itemize}
+}
+
+
+\subsection{Teaching}
+
+%%% TECMilenio 
+\cventry{August 2013--December 2013}{Hight School Teacher}
+{TECMilenio University}{Puebla,Mexico}{}
+{ Euclidian Geometry 
+ \href{https://sites.google.com/site/perezxochicale/teaching/euclidean-geometry}{\faGlobe},
+Information Technology \href{https://sites.google.com/site/perezxochicale/teaching/iit}{\faGlobe} and
+Microsoft Office Access \href{https://sites.google.com/site/perezxochicale/teaching/moa}{\faGlobe}
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+%%% Madero's University
+\cventry{Spring 2012 -- Autumn 2012}{Research Assistant Professor in Mechatronic Engineering}
+{Madero University}{Puebla, Mexico}{}
+{Fundamentals of Automation 
+\href{https://sites.google.com/site/perezxochicale/digital-electronics}{\faGlobe}, 
+Industrial Electronics \href{https://sites.google.com/site/perezxochicale/ie}{\faGlobe}, 
+Research Projects II \href{https://sites.google.com/site/perezxochicale/latex/thesistemplate}{\faGlobe}, 
+Metrology \href{https://sites.google.com/site/perezxochicale/metrology}{\faGlobe}, 
+Physics \href{http://goo.gl/fffnG}{\faGlobe}, 
+Computer Integrating Manufacturing, and Power Electronics
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+
+%%% University Iberoamericana Puebla (UIA-P
+\cventry{Spring 2007 -- Spring 2012}{Research Assistant Professor in Electronic Engineering}
+{University Iberoamericana Puebla}{Puebla, Mexico}{}
+{Stochastic Processes Course 
+\href{https://sites.google.com/site/perezxochicale/stochastic-processes-course}{\faGlobe}, 
+Digital Signal Processing 
+\href{https://sites.google.com/site/perezxochicale/digital-signal-processing-course}{\faGlobe}, 
+Noise and Stochastic Processes and Analog Filters 
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+
+%%%Technological Institute Superior of Atlixco (ITSA)
+\cventry{August 2006 -- June 2007}{Research Assistant Professor in Mechatronic and Electric  Engineering}
+{Technological Institute Superior of Atlixco}{Atlixco, Mexico}{}
+{Electronic I, Numerical Methods, and Electricity and Magnetism. (January-June 2007.)
+Electricity and Magnetism, and Electricity and Industrial Electronics ( August-December 2006)
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+
+
+
+
+
+\section{Awards and Honours}
+
+
+\cvlistitem{I was selected to be part of MECATE 2015, an international public entrepreneurship program.
+My project of a low-cost educational robot was selected from 125 applications received from 35 countries.
+\href{http://let-emprendimientopublico.mx/mecate/2015/}{\faGlobe} }
+
+\cvlistitem{Full PhD Degree Scholarship in the UK from November 2014 to November 2017 
+from the Mexican National Council on Science and Technology }
+\cvlistitem{First place at the 2013 Mexican Tournament of Robotics in the cathegory at HOME.
+\href{http://ccc.inaoep.mx/~tmr2013/index.php}{\faGlobe} }
+\cvlistitem{Full Master Degree Scholarship in Mexico 
+from 2004-2006 from the Mexican National Council on Science and Technology}
+
+
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Native tongue}{}
+\cvitemwithcomment{English}{IETLS Band Score 6.0: Listening 6.0, Reading 7.0, Writing 6.0, Speaking 5.5.}{11/01/14}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+
+
+\section{Computer skills}
+\cvitem{Operative Systems}{Windows, GNU-Linux Ubuntu and Debian}
+\cvitem{Programing and markup languages}{GNU-Octave, GNU-emacs, MATLAB, C++, Kdevelop, Code Composer Studio, ng-spice, LabVIEW, Arduino, Processing,
+\LaTeX, and beginner at Robot Operating System (ROS)}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+
+
+\section{Extracurricular Activities}
+\cvlistitem{On June 2013, I founded LibrE Robotics, 
+a non-profit organization for learning and sharing knowledge to build conditions for a better world.
+  \href{https://sites.google.com/site/librerobotics/}{\faGlobe} } 
+%\cvlistitem{Creating of
+%  a Interactive Planetary Motion Application with the Kinect Sensor.
+%  \href{https://sites.google.com/site/perezxochicale/projects/iss}{\faGlobe} }
+%\cvlistitem{Workshop for building a Light-Tracking Mini Robots with Vibrator Motors}
+\cvlistitem{Giving advice on student projects such as 
+Haptic Referee Glove Lightmetre and Pychometre using Arduino, Smart Irrigation,
+Persistent Of Vision Bicycle Wheel, a Delta Robot Structure 
+\href{https://sites.google.com/site/perezxochicaleprojects/studentprojects}{\faGlobe}}
+%\cvlistitem{A word speech recognition using detection theory with GNU-Octave Poster
+%\href{https://sites.google.com/site/perezxochicale/docs/wr.pdf}{\faGlobe} }
+
+
+\cvlistitem{Item 3. This item is particularly long and therefore normally spans over
+  several lines.  Did you notice the indentation when the line wraps?}
+
+
+
+
+%% \section{Interests}
+%% \cvitem{hobby 1}{Description}
+%% \cvitem{hobby 2}{Description}
+%% \cvitem{hobby 3}{Description}
+
+
+%% \section{Extra 2}
+%% \cvlistdoubleitem{Item 1}{Item 4}
+%% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, 
+%% this item is particularly long to wrap over several lines.}
+
+%% \section{References}
+%% \begin{cvcolumns}
+%%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%% \end{cvcolumns}
+
+
+
+
+
+
+
+% Publications from a BibTeX file without multibib for numerical labels:
+%  \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING
+%  WITH PREAMBLE PART to redefine the heading string ("Publications"):
+%  \renewcommand{\refname}{Articles}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+
+
+%% \clearpage
+%% %-----       letter       ---------------------------------------------------------
+%% % recipient data
+%% \recipient{Student Researcher -- University of Birmingham}{}
+%% \date{November 9, 2015}
+%% \opening{Dear Sir or Madam,}
+%% \closing{Yours faithfully,}
+%% \enclosure[]{curriculum vit\ae{}}          
+%% %use an optional argument to use a string other than "Enclosure", or redefine
+%%  \enclname
+%% \makelettertitle
+
+
+%% I am an international PhD student from Mexico. As a young researcher, I have experience in
+%% running experiments in Human Activity Recognition using sensors attached to the body to
+%% understand the variability of human activities. From my PhD, I have applied
+%% questionnaires, collected data and performed statistical analysis in R.
+
+%% I am very interested in the vacancy to help you in the interviews. I do want to be immerse
+%% in more research activities that can help you to be a better scientist. 
+
+%% \makeletterclosing
+
+
+
+
+
+\end{document}
+
+
+%% end of file `template.tex'.

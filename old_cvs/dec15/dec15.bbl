@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{Icd06}
+G.~Jovanovic-Dolecek and Miguel~A. Perez-Xochicale.
+\newblock \textit{One Method for Design of Wideband FIR Filters Without
+  Multipliers}.
+\newblock Puebla, Mexico, February 2006.
+\newblock Proc. of the 16th IEEE Conference on Electronics, Communications and
+  Computers, CONIELECOMP 2006, published by IEEE Computer Society, N0.
+  0-7695-2505-9/06. 2006 IEEE
+  \href{https://sites.google.com/site/perezxochicale/docs/CONIELECOMP06.pdf}{\faFilePdfO}.
+
+\bibitem{Iced06}
+Miguel~A. Perez-Xochicale and G.~Jovanovic-Dolecek.
+\newblock \textit{A New Method for Design Narrow Band Lowpass FIR Filters Using
+  a Scale Function}.
+\newblock Veracruz, Mexico, November 2006.
+\newblock 2nd International Conference on Electronic Design, Proc. edited by
+  Victor Champac at all, ISBN 968-9085-01-8, pp.85-89,
+  \href{https://sites.google.com/site/perezxochicale/docs/Iced06.pdf}{\faFilePdfO}.
+
+\bibitem{Electro06}
+Miguel~A. Perez-Xochicale and G.~Jovanovic-Dolecek.
+\newblock \textit{A New Method for Design Narrow Band Lowpass FIR Filters Using
+  a Scale Function}.
+\newblock Chihuahua, Mexico, August 2006.
+\newblock 28th International Congress of Electronic Engineering, Proc edited by
+  ITCH Chiuahua, 2006, pp.165-168,
+  \href{https://sites.google.com/site/perezxochicale/docs/Electro06.pdf}{\faFilePdfO}.
+
+\end{thebibliography}

@@ -1,0 +1,486 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt,a4paper,roman]{moderncv}        
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper',
+% 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font
+% family ('sans' and 'roman')
+
+% moderncv themes \moderncvstyle{casual} % style options are 'casual' (default),
+% 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{casual}                             % style options are 'casual'
+                                                    % (default), 'classic', 'oldstyle' and
+                                                    % 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default),
+                                                  % 'orange', 'green', 'red', 'purple',
+                                                  % 'grey' and 'black'
+
+%\renewcommand{\familydefault}{\sfdefault} % to set the default font; use '\sfdefault' for
+%the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one
+%page
+
+% character encoding \usepackage[utf8]{inputenc} % if you are not using xelatex ou
+%lualatex, replace by the encoding you are using
+
+%\usepackage{CJKutf8} % if you need to use CJK to typeset your resume in Chinese, Japanese
+%or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with
+%the dates
+
+%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force
+%the width allocated to your name and avoid line breaks. be careful though, the length is
+%normally calculated to avoid any overlap with your personal info; use this at your own
+%typographical risks...
+
+% personal data
+% \name{Miguel}{Perez-Xochicale}
+\name{Miguel A.}{P\'erez-Xochicale}
+
+%  \title{Resumé title}    % optional, remove / comment the line if not wanted
+\address{Edgbaston}{Birmingham B15 2TT}{United Kingdom}
+
+% optional, remove / comment the line if not wanted; 
+% the "postcode city" and "country" arguments can be omitted or provided empty
+
+%  \phone[mobile]{0744 28 17 616}                   % optional, remove / comment the line if
+                                                 % not wanted; the optional "type" of the
+                                                 % phone can be "mobile" (default),
+                                                 % "fixed" or "fax"
+\phone[fixed]{+44~(0)~121 41 47511}
+
+% \phone[fax]{+3~(456)~789~012}
+\email{perez.xochicale@gmail.com}                               % optional, remove /
+                                                                % comment the line if not
+                                                                % wanted
+
+% \email{map479@bham.ac.uk} % optional, remove / comment the line if not wanted
+\homepage{mxochicale.github.io}                         % optional,
+                                                                         % remove /
+                                                                         % comment the
+                                                                         % line if not
+                                                                         % wanted
+\social[github]{mxochicale}                              % optional, remove / comment the
+                                                         % line if not wanted
+
+\social[linkedin]{miguel-perez-xochicale-957074102}                        % optional,
+                                                                            % remove /
+                                                                            % comment the
+                                                                            % line if not
+                                                                            % wanted
+\social[twitter]{mperezxochicale}                             % optional, remove / comment
+                                                              % the line if not wanted
+
+
+% \extrainfo{additional information} % optional, remove / comment the line if not wanted
+
+\photo[84pt][0.4pt]{IMG_20150429_113341}                       % optional, remove / comment the line
+                                                    % if not wanted; '64pt' is the height
+                                                    % the picture must be resized to,
+                                                    % 0.4pt is the thickness of the frame
+                                                    % around it (put it to 0pt for no
+                                                    % frame) and 'picture' is the name of
+                                                    % the picture file
+
+% \quote{
+% I am a hard working and enthusiastic person. Principles of responsability, 
+% human kidness and honesty guide me through my life decisions.
+% } % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful
+% if you make citations in your resume
+
+% \makeatletter
+% \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% \makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+% \usepackage{multibib}
+% \newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Research Interests} 
+I am generally interested in the field of Human Activity Recognition and Human-Robot
+Interaction. As a doctoral researcher, I am specifically gaining a deeper understanding of
+the variability of simple and complex human movements
+% using  Nonlinear Dynamics 
+so as to create novel analysis 
+and interpretation of signals from inertial sensors.
+    
+% I conduct research into Design for Human Variability. This is a DfX capability that supports 
+% the design of artifacts, tasks, and environments that are robust to the variability in their users. 
+% The work is broadly decomposed into three areas: 
+% quantifying variability within populations, 
+% creating approaches for accommodating that variability, 
+% and developing the tools that accomplish these tasks. 
+% A primary focus of each of these activities is dissemination: 
+% if the work doesn’t make it into practice, we weren’t successful in our efforts. 
+% http://www.mattparkinson.com/blog/2014/05/09/dfhv/
+
+
+\section{Education}
+
+\cventry{Nov. 2014 -- Present}{University of Birmingham}{PhD in Electronic, Electrical
+  and Computer Engineering}{Birmingham, UK}{\textit{}} 
+  {Thesis: Automatic Indentification of Movement Variability.
+   \\ Advisors: Chris Baber  } 
+  %arguments 3 to 6 can be left empty
+
+\cventry{Sep. 2004 -- Sep. 2006}{Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica}
+  {Master Degree in Electronics}{Puebla, Mexico}{\textit{}} {Thesis:
+  Digital Filter FIR with less multipliers
+  \href{https://sites.google.com/site/perezxochicale/docs/MScThesis.pdf}{\faFilePdfO}
+  \\ Advisor: Gordana Jovanovic Dolecek\\ Professional license: 6294064}
+% arguments 3 to 6 can be left empty
+
+\cventry{Aug. 1999 -- Sep. 2004}{Technological Institute of Puebla}{Bachelor degree
+  in Electronic Engineering}{Puebla, Mexico}{\textit{}} 
+  {Thesis: Speed control of a Robot of two degrees of freedom.
+  \href{https://sites.google.com/site/perezxochicale/docs/BachelorProject.pdf}{\faFilePdfO}
+  %\\ Advisor: Esteban Torres Leon
+  \\ Professional license: 4907567}
+% arguments 3 to 6 can be left empty
+
+\section{Experience}
+
+
+
+\subsection{Professional}
+
+%%% @ Robotis Laboratory @ INAOE
+\cventry{February 2013 -- August 2013}{Research Assistant at the Robotics Laboratory }
+{Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica}{Tonantzintla, Mexico}{}
+{A Human-Robot Interaction Demo Dance 
+\newline{}
+Detailed achievements:%
+\begin{itemize}%
+\item It was implemented a Human-Robot Interaction Demo Dance which is based on a 
+ZSTAR3 Radio Frequency single three-axis accelerometer and a Patrolbot mobile robot. 
+We explored four gestures wearing the accelerometer in the left writs 
+in order to create simple dance activities with the Patrolbot mobile robot.
+\href{https://sites.google.com/site/perezxochicale/projects/demodance}{\faGlobe}
+\end{itemize}
+}
+
+
+%%% @ UMAD
+\cventry{January 2012 -- January 2013}{Invited Lecturer}
+{Madero University}{Puebla, Mexico}{}
+{Mechatronic Laboratory Proposal
+\newline{}
+Detailed achievements:%
+\begin{itemize}%
+\item 
+It was proposed a design of a Mechatronic Laboratory that includes a benchmark for
+Mechatronic's laboratories in each continent, Mexico and Puebla.
+The proposal also includes a 3D layout design 
+and minimal requirements for the laboratory of hardware and software.
+  \href{https://sites.google.com/site/perezxochicaleprojects/mechatronicslaboratorydesign}{\faGlobe}
+\end{itemize}
+}
+
+
+%%% @ Profesional  @ INAOE
+\cventry{August 2003 -- March 2004}{Profesional Resident}
+{Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica}{Tonantzintla, Mexico}{}
+{Speed control of a two degrees of freedom Robot
+\newline{}
+Detailed achievements:%
+\begin{itemize}%
+\item A speed control was implemented with both Microcontrollers PIC 16F84 and 16F877
+to vary the speed of DC motors and 
+controlled with Virtual Instruments on LabVIEW using Serial Communication RS-232.
+\end{itemize}
+}
+
+
+\subsection{Teaching}
+
+%%% TECMilenio 
+\cventry{August 2013--December 2013}{Hight School Teacher}
+{TECMilenio University}{Puebla,Mexico}{}
+{Courses: 
+Information Technology \href{https://sites.google.com/site/perezxochicale/teaching/iit}{\faGlobe},
+Euclidian Geometry  \href{https://sites.google.com/site/perezxochicale/teaching/euclidean-geometry}{\faGlobe}
+and
+Microsoft Office Access \href{https://sites.google.com/site/perezxochicale/teaching/moa}{\faGlobe}
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+%%% Madero's University
+\cventry{Spring 2012 -- Autumn 2012}{Research Assistant Lecturer in Mechatronic Engineering}
+{Madero University}{Puebla, Mexico}{}
+{Courses: Fundamentals of Automation 
+\href{https://sites.google.com/site/perezxochicale/digital-electronics}{\faGlobe}, 
+Industrial Electronics \href{https://sites.google.com/site/perezxochicale/ie}{\faGlobe}, 
+Research Projects II \href{https://sites.google.com/site/perezxochicale/latex/thesistemplate}{\faGlobe}, 
+Metrology \href{https://sites.google.com/site/perezxochicale/metrology}{\faGlobe}, 
+Physics \href{http://goo.gl/fffnG}{\faGlobe}, 
+Computer Integrating Manufacturing, and Power Electronics
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+
+%%% University Iberoamericana Puebla (UIA-P
+\cventry{Spring 2007 -- Spring 2012}{Research Assistant Lecturer in Electronic Engineering}
+{University Iberoamericana Puebla}{Puebla, Mexico}{}
+{Courses: Stochastic Processes Course 
+\href{https://sites.google.com/site/perezxochicale/stochastic-processes-course}{\faGlobe}, 
+Digital Signal Processing 
+\href{https://sites.google.com/site/perezxochicale/digital-signal-processing-course}{\faGlobe}, 
+Noise and Stochastic Processes and Analog Filters 
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+
+%%%Technological Institute Superior of Atlixco (ITSA)
+\cventry{August 2006 -- June 2007}{Research Assistant Lecturer in Mechatronic and Electric  Engineering}
+{Technological Institute Superior of Atlixco}{Atlixco, Mexico}{}
+{Courses: Electronic I, Numerical Methods, and Electricity and Magnetism. (January-June 2007.)
+Electricity and Magnetism, and Electricity and Industrial Electronics ( August-December 2006)
+% \newline{}
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 3.
+% \item Achievement 3.
+% \end{itemize}
+}
+
+
+
+
+
+
+\section{Awards and Honours}
+
+
+\cvlistitem{
+A prototype of a low-cost robot was selected amoung 125 applications which were received from 35 countries
+and presented at an international public entrepreneurship program (MECATE 2015).
+[20-24 July 2015] \href{https://www.youtube.com/watch?v=VjVGnwD422g}{\faGlobe}}
+
+\cvlistitem{Full PhD Degree Scholarship in the UK from November 2014 to November 2017 
+from the Mexican National Council on Science and Technology (CONACyT).}
+\cvlistitem{First place at the Mexican Tournament of Robotics 2013 in the cathegory at HOME.
+It was presented a Human-Robot Interation (HRI) Dance Demo. [25-27 April 2013]
+\href{http://ccc.inaoep.mx/~tmr2013/}{\faGlobe} } 
+
+\cvlistitem{Full Master Degree Scholarship in Mexico 
+from September 2004 to September 2006 from the Mexican National Council on Science and Technology (CONACyT).}
+
+
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Native tongue}{}
+\cvitemwithcomment{English}{IETLS Band Score 6.0: Listening 6.0, Reading 7.0, Writing 6.0, Speaking 5.5.}{11/01/14}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+
+
+\section{Computer skills}
+\cvitem{Operative Systems}{Windows, GNU-Linux Ubuntu and Debian}
+\cvitem{Programing and markup languages}{R, GNU-Octave, GNU-emacs, MATLAB, C++, Kdevelop, Code Composer Studio, ng-spice, LabVIEW, Arduino, Processing,
+\LaTeX, and beginner at Robot Operating System (ROS).}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+
+
+\section{Extracurricular Activities}
+
+\cvlistitem{
+I am developing a workshop to teach children how to build low cost robots for outreach communities at the University of Birmingham.
+[January-May 2016]}
+%   \href{https://sites.google.com/site/librerobotics/}{\faGlobe} } 
+
+
+\cvlistitem{I founded LibrE Robotics, 
+a non-profit organization, 
+in June 2013 to transfer knowledge in Robotics for children to build conditions for a better world.
+  \href{https://sites.google.com/site/librerobotics/}{\faGlobe} } 
+%\cvlistitem{Creating of
+%  a Interactive Planetary Motion Application with the Kinect Sensor.
+%  \href{https://sites.google.com/site/perezxochicale/projects/iss}{\faGlobe} }
+%\cvlistitem{Workshop for building a Light-Tracking Mini Robots with Vibrator Motors}
+\cvlistitem{
+I adviced different students projects at Madero University on November 2012
+: Haptic Referee Glove Lightmetre and Pychometre using Arduino, Smart Irrigation,
+Persistent Of Vision Bicycle Wheel and a Delta Robot Structure.
+\href{https://sites.google.com/site/perezxochicaleprojects/studentprojects}{\faGlobe}}
+%\cvlistitem{A word speech recognition using detection theory with GNU-Octave Poster
+%\href{https://sites.google.com/site/perezxochicale/docs/wr.pdf}{\faGlobe} }
+
+
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over
+%   several lines.  Did you notice the indentation when the line wraps?}
+
+
+
+
+%% \section{Interests}
+%% \cvitem{hobby 1}{Description}
+%% \cvitem{hobby 2}{Description}
+%% \cvitem{hobby 3}{Description}
+
+
+%% \section{Extra 2}
+%% \cvlistdoubleitem{Item 1}{Item 4}
+%% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, 
+%% this item is particularly long to wrap over several lines.}
+
+%% \section{References}
+%% \begin{cvcolumns}
+%%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%% \end{cvcolumns}
+
+
+
+
+
+
+
+% Publications from a BibTeX file without multibib for numerical labels:
+%  \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING
+%  WITH PREAMBLE PART to redefine the heading string ("Publications"):
+%  \renewcommand{\refname}{Articles}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+
+% 
+% 
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Statement of Purpose to the third European Computational Motor Control Summer School}{}
+% 
+% 
+% \date{March 11, 2016}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% % \enclosure[]{curriculum vit\ae{}}          
+% %use an optional argument to use a string other than "Enclosure", or redefine
+% 
+% % \enclname
+% \makelettertitle
+% 
+% 
+% I believe that by being accepted to the European Computational Motor Control Summer School (ECMCSS)
+% my skills as a doctoral researcher will be strongly enriched in the following areas:
+% \begin{itemize}
+% \item Knowledge. 
+% In my Ph.D. research, I am interested in automatically identifying the variability of human body activities. 
+% Therefore, the tutorials at the ECMCSS will be helpful so as to gain deeper understanding of motor control 
+% concepts that will be a bed rock to my research.
+% 
+% 
+% \item Networking.  It will be a great opportunity for me to be part of the ECMSS so as to meet
+% Ph.D. researches and professionals who have similar research interests and make possible 
+% which might result in  future collaborations.
+% 
+% 
+%  \item Coding. I have been working with R for two years. I however think that is very important 
+%  to use a common language framework such as MATLAB. 
+%  Therefore, this is a good opportunity to learn how to collaborate with researchers who are using 
+%  MATLAB as the main mathematical software.
+%  
+% 
+% %  it will useful to share my resaerch interests and 
+% %  that can be possible collaborators,
+% %  to make myself present in the field and share what I know and then in future I might possible be
+% %  a collaborator.
+% 
+%  %  It is therefore of
+% %  such interested to work with MATLAB so as to 
+%  %  with the scientific comuminty and I belive that the ECMSS would be 
+% %   using a common programming language is very important to create a strong community
+% %  and I believe that by using MATLAB, I will learn how we can share our hypothesis or ideas...
+% \end{itemize}
+% 
+% 
+% 
+% Additionally, receiving tutorials from researchers who are doing frontier science 
+%  in human motor control will be an exceptional opportunity for me to be inspired.
+% %   in my scientific endevours.
+%  
+% %  All in all, it will definitively a great opportunity to enhance my scientific career and to share
+% %  to the scientific community 
+%  
+% %  to make my scientific mark.
+% 
+% % will expand and increase my abilities to pursuit
+% % scientific value of the knowledge.
+% 
+% % Therefore, I believe that   which will be bedrock for my scientific endevours.
+% %  a backbone to my reaserch and that might the bedrock to develop a more solid PhD thesis.
+% % 
+% % Introduction to human motor control and learning 
+% % 
+% % - Monday: Introduction to human motor control and learning . Sandro Mussa-Ivaldi
+% %   (AM) and David Franklin (PM)
+% % 
+% % - Tuesday: Locomotion. Katja Mombaur (AM) and James Finley (PM)
+% % 
+% % - Wednesday: Motor Control. Etienne Burdet, Emmanuel Guigon (AM), and Nathanael
+% %   Jarrass? (PM).
+% % 
+% % - Thursday: Motor Learning. Nicolas Schweighofer (AM); outdoor activities (PM)
+% % 
+% % - Friday: Biomechanics. Andrea D'Avella (AM) and Mitsu Hayashibe (PM)
+% % 
+% 
+% 
+% \makeletterclosing
+% 
+
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
