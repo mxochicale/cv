@@ -11,3 +11,6 @@ To clean the LaTeX template
 ```
 make clean
 ```
+
+# [TODO List](https://github.com/mxochicale/cv/blob/master/latex-cv-document/TODO.md)
+
