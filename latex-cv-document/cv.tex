@@ -4,6 +4,13 @@
 
 
 \documentclass[10pt,a4paper,roman]{moderncv}
+
+ 
+ % possible options include font size ('10pt', '11pt' and '12pt'), 
+%% paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and 
+%% font family ('sans' and 'roman')
+
+
 \moderncvstyle{casual}                             % style options are 'casual'
                                                     % (default), 'classic', 'oldstyle' and
                                                     % 'banking'
@@ -33,8 +40,8 @@
 
 
 \usepackage[scale=0.93]{geometry}% adjust the page margins
-%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with
-%the dates
+\setlength{\hintscolumnwidth}{3.5cm} %
+%  if you want to change the width of the column with the dates
 
 %\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force
 %the width allocated to your name and avoid line breaks. be careful though, the length is
@@ -43,8 +50,9 @@
 
 
 
-\name{Miguel}{P. Xochicale}
-\title{Curriculum Vitae -- December 2017}
+\name{Miguel}{P Xochicale}
+\title{Curriculum Vitae -- February 2017}
+\renewcommand*{\namefont}{\fontsize{30}{40}\mdseries\upshape}
 
 
 
@@ -97,7 +105,7 @@
   \begin{minipage}{.4\textwidth}
   \begin{description}
    \item[\faTwitter ] \href{https://twitter.com/_mxochicale}{@\textunderscore mxochicale}
-   \item[\faGithub]  \href{https://github.com/mxochicale}{mxochicale}
+   \item[\faGithub]  \href{https://github.com/mxochicale}{@mxochicale}
   %  \item[\faLinkedin]
    \item[ORCID:] \href{http://orcid.org/0000-0002-8225-7517}{0000-0002-8225-7517}
    \end{description}
@@ -114,8 +122,8 @@
 \section{Research Interests}
 \begin{changemargin}{2.4cm}{0.5cm}
 I am interested in the fields of Human-Robot Interaction and Human Activity Recognition.
-For my PhD, I am gaining deeper understanding of the variability
-of human movements and facial expressions using Nonlinear Dynamics and Deep Learning.
+Specifically, I am gaining deeper understanding of the variability of human movements 
+and facial expressions using Nonlinear Dynamics and Deep Learning.
 % in order to create novel analysis and interpretation of signals collected
 % through a network of Inertial Measurement Units.
 \end{changemargin}
@@ -161,6 +169,10 @@ of human movements and facial expressions using Nonlinear Dynamics and Deep Lear
 %%%
 %%%
 \section{Teaching Experience}
+
+\cventry{01/2018--04/2018}{Teaching Associate}
+{University of Birmingham}{UK}{}
+{Engineering Maths 2. Lecturer: Professor Martin Russell, Dr Carl Anthony}
 
 \cventry{08/2017--12/2017}{Teaching Associate}
 {University of Birmingham}{UK}{}
@@ -225,29 +237,31 @@ Electricity and Magnetism, and Electricity and Industrial Electronics ( August-D
 \section{Professional Experience}
 
 \cventry{02/2013 -- 08/2013}{Research Assistant}{INAOE's Robotics Laboratory}{M\'exico}{}
-{Detailed achievements: I develop a Human-Robot Interaction Demo Dance which  was based on a ZSTAR3 Radio
-Frequency single three-axis accelerometer and a Patrolbot mobile robot.
-For the demo, I explored four gestures wearing the accelerometer in the left wrist
-in order to create simple dance activities with the Patrolbot mobile robot.
-For further information go to \href{https://sites.google.com/site/perezxochicale/projects/demodance}{\faExternalLink}.}
+{Achievements: I developed a Human-Robot Interaction Demo Dance based on 
+a Patrolbot mobile robot and a ZSTAR3 Radio Frequency single three-axis accelerometer.
+For the demo, I explored four hand gestures wearing the accelerometer in the left wrist
+in order to create simple dance activities with the Patrolbot mobile robot
+\href{https://sites.google.com/site/perezxochicale/projects/demodance}{\faExternalLink}.
+}
 
 \cventry{01/2012 -- 01/2013}{Invited Lecturer}
 {Universidad Madero}{Puebla, M\'exico}{}
-{Detailed achievements:
+{Achievements:
 I proposed and supervised the following students' projects: Haptic Referee Glove,
  Lightmetre and Pychometre using Arduino, Smart Irrigation, Persistent Of Vision Bicycle Wheel
- and a Delta Robot Structure.
-\href{https://sites.google.com/site/perezxochicaleprojects/studentprojects}{\faExternalLink}
-Additionally, I proposed and designed a Mechatronic Laboratory which includes a benchmark for
-Mechatronic's laboratories in M\'exico and Puebla, a 3D layout design and minimal
-requirements of hardware and software for the laboratory.
-For further information go to \href{https://sites.google.com/site/perezxochicaleprojects/mechatronicslaboratorydesign}{\faExternalLink}.
+ and a Delta Robot Structure 
+\href{https://sites.google.com/site/perezxochicaleprojects/studentprojects}{\faExternalLink}.
+Additionally, I proposed and designed a Mechatronic Laboratory which includes: 
+(i) a benchmark for laboratories in mechatronics in M\'exico and Puebla, 
+(ii) a 3D layout design and 
+(iii) minimal requirements of hardware and software for the laboratory
+ \href{https://sites.google.com/site/perezxochicaleprojects/mechatronicslaboratorydesign}{\faExternalLink}.
 }
 
 \cventry{09/2003 -- 03/2004}{Research Internship}
 {INAOE}{M\'exico}{}
-{Detailed achievements:
-I implemented a speed control for a two-degree-of-freedom Robot with Microcontrollers
+{Achievements:
+I implemented a speed control for a two-degree-of-freedom robot with microcontrollers
 PIC 16F84 and 16F877 that made communication via RS-232 using Virtual Instruments on LabVIEW.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -257,28 +271,28 @@ PIC 16F84 and 16F877 that made communication via RS-232 using Virtual Instrument
 \section{Awards and Honours}
 
 \cvitem{11/01/2017}{
-I was selected to present advances of my Ph.D in the second forum of Mexican Talent Innovation Match MX
+I was selected to present advances of my Ph.D in the second forum of Mexican Talent, Innovation Match MX 2017,
 with my talk ``Towards the improvement of Healthy Ageing with Humanoid Robos''.
-\href{https://github.com/mxochicale/InnovationMatchMX/tree/master/2017}{\faExternalLink}.
+\href{https://github.com/mxochicale/InnovationMatchMX/tree/master/2017}{\faExternalLink}
 \href{https://github.com/mxochicale/InnovationMatchMX/blob/master/2017/presentation/IMMX-MA-0058.pdf}{\faFilePdfO}
 }
 
 \cvitem{16-18/06/2016}{
 I won a shared first prize for presenting one of the two best posters at
 the XIV Symposium of Mexican Students in the UK at University of Edinburgh.
-\href{https://github.com/mxochicale/symposiummx/tree/master/2016}{\faExternalLink}.}
+\href{https://github.com/mxochicale/symposiummx/tree/master/2016}{\faExternalLink}}
 
 \cvitem{20-24/07/2015}{My project of a low-cost robot was selected amoung 125 applications received from 35 countries
-and presented at the first international public entrepreneurship program in Mexico (MECATE 2015)
+and presented at the first international public entrepreneurship program in Mexico (MECATE 2015).
 \href{http://let-emprendimientopublico.mx/en/portfolio_category/mecate-primera-generacion-en/}{\faExternalLink}
-\href{https://www.youtube.com/watch?v=VjVGnwD422g}{\faYoutube}.}
+\href{https://www.youtube.com/watch?v=VjVGnwD422g}{\faYoutube}}
 
 \cvitem{11/2014-11/2018}{
 Full Ph.D. Scholarship in the UK from the Mexican National Council on Science and Technology (CONACyT).}
 
 \cvitem{25-27/05/2013}{
 Markovito, a service robot, won the first place at the Mexican Tournament of Robotics 2013 in the cathegory at HOME
-where I presented a Human-Robot Interation Dance Demo \href{https://www.youtube.com/watch?v=Kw-lZam_qZI}{\faYoutube}. }
+where I presented a Human-Robot Interation Dance Demo. \href{https://www.youtube.com/watch?v=Kw-lZam_qZI}{\faYoutube}}
 
 \cvitem{09/2004-09/2006}{
 Full M.Sc. Scholarship in M\'exico from the CONACyT. }
@@ -288,7 +302,7 @@ Full M.Sc. Scholarship in M\'exico from the CONACyT. }
 %%%
 %%%
 \section{Languages}
-\cvitemwithcomment{English}{IETLS Band Score 6.0: Listening 6.0, Reading 7.0, Writing 6.0, Speaking 5.5.}{11/01/14}
+\cvitemwithcomment{English}{IETLS Band Score 6.0: Listening 6.0, Reading 7.0, Writing 6.0, Speaking 5.5.}{November 2014}
 \cvitemwithcomment{Spanish}{Native tongue}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -305,6 +319,7 @@ Graphic design (Inkscape)
 Robot Operating System (ROS),
 C, C++,
 Arduino, Processing, \LaTeX, the shell,
+vim,
 GNU-emacs,
 GNU-Octave, MATLAB and LabVIEW.}
 
