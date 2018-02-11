@@ -3,7 +3,7 @@ Log Book
 
 ## TODO 
 
-* [ ] Add asbtracts section in publications _(CREATED:?,SORTED:?)_  
+* [ ] Add asbtracts section in publications _(CREATED:11FEB2018,SORTED:?)_  
 * [ ] Minimise the font size for dates  _(CREATED:?,SORTED:?)_  
 * [ ] Add Volunteering activities  _(CREATED:?,SORTED:?)_  
 

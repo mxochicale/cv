@@ -12,6 +12,6 @@ To clean the LaTeX template
 make clean
 ```
 
-* Log Book [:link:](https://github.com/mxochicale/cv/blob/master/latex-cv-document/logBook.md)
+* Log Book [:link:](https://github.com/mxochicale/cv/blob/master/latex-cv-document/logBOOK.md)
 
 
