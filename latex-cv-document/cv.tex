@@ -27,6 +27,7 @@
 
 
 
+
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
 % [REF] http://tex.stackexchange.com/questions/588/how-can-i-change-the-margins-for-only-part-of-the-text
@@ -43,6 +44,14 @@
 \setlength{\hintscolumnwidth}{3.5cm} %
 %  if you want to change the width of the column with the dates
 
+
+\usepackage{multibib}
+\newcites{pr}{Peer-Reviewed}
+\newcites{npr}{Non-Peer Reviewed}
+
+
+
+
 %\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to force
 %the width allocated to your name and avoid line breaks. be careful though, the length is
 %normally calculated to avoid any overlap with your personal info; use this at your own
@@ -51,7 +60,7 @@
 
 
 \name{Miguel}{P Xochicale}
-\title{Curriculum Vitae -- June 2018}
+\title{Curriculum Vitae -- July 2018}
 \renewcommand*{\namefont}{\fontsize{30}{40}\mdseries\upshape}
 
 
@@ -133,7 +142,7 @@ to automatically quantify movement variability.
 %%%
 \section{Education}
 \cventry{11/2014 -- 11/2018}{Ph.D. in Human-Robot Interaction}{University of Birmingham}{UK}{}
-  {Thesis: Automatic Classification of Movement Variability in the context of Human-Robot Interaction
+  {Thesis: Nonlinear Time-series Analysis for Human-Robot Movement Variability
   \href{https://github.com/mxochicale/PhD}{\faGithubAlt}
    \\ Supervisors: Professor Chris Baber and  Professor Martin Russell  }
 
@@ -155,9 +164,18 @@ to automatically quantify movement variability.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
 %%%
-\nocite{*}
-\bibliographystyle{my_unsrt}
-\bibliography{publications-peer-reviewed}
+\section{Publications}
+\bibliographystylepr{plain}
+\bibliographypr{peer-reviewed}
+
+\bibliographystylenpr{plain}
+\bibliographynpr{non-peer-reviewed}
+
+
+%\citepr{MPXochicale_HAI2017,MPXochicale_HRI2017,mxochicale2016_werob,mxochicale2006_ced,mxochicale2016_derdis}
+%\citenpr{MPXochicale_ECCC2018, MPXochicale_CERE2018}
+%
+%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -328,7 +346,7 @@ open-source enthusiast GitHub user \href{https://github.com/mxochicale}{@mxochic
 {
 (05-2018) Finalist at the Three Minute Thesis Competition 2018.
 Video: \href{https://www.youtube.com/watch?v=07ewRYcS-0g}{\faYoutube} and 
-GitHub: \href{https://github.com/3mt}{\faGithubAlt}. \\  
+GitHub: \href{https://github.com/mxochicale/3mt}{\faGithubAlt}. \\  
 (2015--2018) Research Poster Conference for 
 (2015) \href{https://github.com/mxochicale/PhD/blob/master/posters/Research_Poster_Conference_UoB/2015/poster/poster.pdf}{\faImage}, 
 (2016) \href{https://github.com/mxochicale/PhD/blob/master/posters/Research_Poster_Conference_UoB/2016/poster/poster.pdf}{\faImage}, and  
