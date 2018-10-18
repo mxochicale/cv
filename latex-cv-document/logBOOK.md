@@ -26,6 +26,37 @@ LOGBOOK
 
 ## SORTED
 
+### adding preprints for publicaitons requires:
+
+* add file `preprints.bib` with citation tag
+* add these lines
+```
+\newcites{pp}{Preprints}
+
+\bibliographystylepp{plain}
+\bibliographypp{preprints}
+
+\citepp{mxochicale2018arXiv}
+
+```
+
+* Makefile
+
+```
+
+bib: 
+	$(LATEX) $(FILENAME).tex
+	$(BIB) pr
+	$(BIB) npr
+	$(BIB) pp
+
+
+```
+
+added: Thu Oct 18 00:56:40 BST 2018
+
+
+
 
 * [x] update PhD thesis title  title   
 	added: Sun 27 May 17:24:01 BST 2018  

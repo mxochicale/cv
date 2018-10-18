@@ -11,6 +11,7 @@ bib:
 	$(LATEX) $(FILENAME).tex
 	$(BIB) pr
 	$(BIB) npr
+	$(BIB) pp
 
 pdf: 
 	$(LATEX) $(FILENAME).tex
