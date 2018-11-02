@@ -9,6 +9,7 @@ Command lines for building the LaTex CV documents
 ```
 \citepr{MPXochicale_HAI2017,MPXochicale_HRI2017,mxochicale2016_werob,mxochicale2006_ced,mxochicale2016_derdis}
 \citenpr{MPXochicale_ECCC2018, MPXochicale_CERE2018}
+\citepp{mxochicale2018arXiv}
 ```
 
 2. make bibtex
@@ -21,6 +22,7 @@ make bib
 ```
 %\citepr{MPXochicale_HAI2017,MPXochicale_HRI2017,mxochicale2016_werob,mxochicale2006_ced,mxochicale2016_derdis}
 %\citenpr{MPXochicale_ECCC2018, MPXochicale_CERE2018}
+%\citepp{mxochicale2018arXiv}
 ```
 
 4. make pdf
