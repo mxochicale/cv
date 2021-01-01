@@ -34,8 +34,7 @@ jobs:
         echo "$DEPLOY_KEY" > ~/.ssh/id_ed25519
         chmod 600 ~/.ssh/id_ed25519
         git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
-
-	git clone --depth=1 --branch generated-pdfs git@github.com:mxochicale/cv.git "$GITHUB_WORKSPACE/deploy"
+        git clone --depth=1 --branch generated-pdfs git@github.com:mxochicale/cv.git "$GITHUB_WORKSPACE/deploy"
         cp -f tex/main.pdf "$GITHUB_WORKSPACE/deploy/cv.pdf"
         cd "$GITHUB_WORKSPACE/deploy"
         git add cv.pdf
@@ -43,4 +42,4 @@ jobs:
         git push
 
       env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}    
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
