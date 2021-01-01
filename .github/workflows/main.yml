@@ -2,7 +2,7 @@ name: Compiling-TeX
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
