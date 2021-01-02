@@ -1,9 +1,10 @@
-name: Compiling-TeX
+name: Compiling-TeX-CV
 on:
   push:
     branches:
       - main
-      - 02-ci-cv
+      #- 02-ci-cv
+
 jobs:
   build:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
