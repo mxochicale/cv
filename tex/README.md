@@ -3,7 +3,7 @@
 ## local build
 Open terminal and run:
 ```
-make clean && make & evince main.pdf
+make clean && make && evince main.pdf
 ```
 
 ## build with ci
