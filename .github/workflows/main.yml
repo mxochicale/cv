@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      #- 02-ci-cv
+      - 6-cv-jan-2021
 
 jobs:
   build:
