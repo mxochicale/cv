@@ -1,8 +1,13 @@
 # My Curriculum Vitae
-[![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Compiling-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![ieee-poster](https://img.shields.io/badge/read-cv-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv.pdf)
+[![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![ieee-poster](https://img.shields.io/badge/read-cv-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv.pdf)
 
 ## Local and CI build 
 * [README](tex/README.md)
+
+## Clone my CV
+```
+git clone git@github.com:mxochicale/cv.git
+```
 
 ## Licence and Citation 
 This CV is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 

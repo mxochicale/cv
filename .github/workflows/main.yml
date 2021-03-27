@@ -1,4 +1,4 @@
-name: Compiling-TeX-CV
+name: Built-TeX-CV
 on:
   push:
     branches:
