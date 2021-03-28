@@ -1,13 +1,14 @@
-name: Compiling-TeX-CV
+name: Built-TeX-CV
 on:
   push:
     branches:
-      - main
+      - no-main
       - 6-cv-jan-2021
+      - 08-march2021
 
 jobs:
   build:
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    if: "!contains(github.event.head_commit.message, 'SKIPCI')"
     runs-on: ubuntu-latest
     steps:
 
