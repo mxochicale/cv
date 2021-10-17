@@ -17,3 +17,8 @@
 **/*.toc
 **/*.vrb
 **/tex/_minted-main/*.*
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*.out
+**/*.run.xml
