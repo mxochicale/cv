@@ -53,9 +53,9 @@
 \RequirePackage[strict]{changepage}
 \geometry{
   a4paper,
-  top=2cm,
+  top=1cm,
   bottom=2cm,
-  left=4.5cm,
+  left=2.0cm, %% Margin from main text to the left side of the
   right=1.5cm,
   includefoot,
   heightrounded,
@@ -91,8 +91,9 @@
 
 % Custom styles
 \RequirePackage{titlesec}
-\titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
-\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.5cm\relax}{2\parskip}{0.5cm}
+%\titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
+\titleformat{\section}{\large\scshape}{}{0cm}{}
+\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.5cm\relax}{1\parskip}{0.5cm}
 
 % \subsection{title}
 % \subsection{title}[location]
