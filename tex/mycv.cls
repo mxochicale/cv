@@ -54,8 +54,8 @@
 \geometry{
   a4paper,
   top=1cm,
-  bottom=2cm,
-  left=2.0cm, %% Margin from main text to the left side of the
+  bottom=1cm,
+  left=1.5cm, %% Margin from main text to the left side of the
   right=1.5cm,
   includefoot,
   heightrounded,
@@ -128,7 +128,7 @@
   \clearpage%
   \begin{adjustwidth}{\dimexpr\Gm@rmargin-\Gm@lmargin\relax}{}
     \begin{minipage}[c]{.3\linewidth}
-      \scalebox{1.2}{\Huge\@name}%
+      \scalebox{1.3}{\Huge\@name}%
     \end{minipage}%
     \begin{minipage}[c]{.7\linewidth}
       \begin{flushright}
