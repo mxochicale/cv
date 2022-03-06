@@ -92,8 +92,8 @@
 % Custom styles
 \RequirePackage{titlesec}
 %\titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
-\titleformat{\section}{\large\scshape}{}{0cm}{}
-\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.5cm\relax}{1\parskip}{0.5cm}
+\titleformat{\section}{\LARGE\scshape\bf}{}{0cm}{}
+\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.0cm\relax}{1\parskip}{0.1cm}
 
 % \subsection{title}
 % \subsection{title}[location]
@@ -128,7 +128,7 @@
   \clearpage%
   \begin{adjustwidth}{\dimexpr\Gm@rmargin-\Gm@lmargin\relax}{}
     \begin{minipage}[c]{.3\linewidth}
-      \scalebox{1.3}{\Huge\@name}%
+      \scalebox{1.2}{\Huge\@name}%
     \end{minipage}%
     \begin{minipage}[c]{.7\linewidth}
       \begin{flushright}
@@ -161,7 +161,7 @@
         }%
       \end{flushright}
     \end{minipage}
-    \vspace{1ex}%
+    \vspace{2ex}%
     \par\vspace{-.5\ht\strutbox}\noindent\hrulefill\par%
   \end{adjustwidth}
 }
