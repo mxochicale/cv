@@ -1,4 +1,4 @@
-name: Built-TeX-CV
+name: CICV2P
 on:
   push:
     branches:

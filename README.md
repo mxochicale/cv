@@ -1,5 +1,5 @@
 # My Curriculum Vitae :scroll: 
-[![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv.pdf)
+[![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 My CV is written in LaTeX and it is built locally in Ubuntu 20.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
 Refer to [README](tex/README.md) for detailed instructions on local and CI latex built. 
