@@ -86,18 +86,20 @@
 \newcommand*{\homepage}[1]{\gdef\@homepage{#1}}
 \newcommand*{\github}[1]{\gdef\@github{#1}}
 \newcommand*{\linkedin}[1]{\gdef\@linkedin{#1}}
+\newcommand*{\researchinterest}[1]{\gdef\@researchinterest{#1}}
 \renewcommand*{\date}[1]{\gdef\@date{#1}}
 \date{\today}
 
 % Custom styles
 \RequirePackage{titlesec}
 %\titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
-\titleformat{\section}{\LARGE\scshape\bf}{}{0cm}{}
+\titleformat{\section}{\LARGE\scshape\bf}{}{-2.5mm}{}
 \titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.0cm\relax}{1\parskip}{0.1cm}
 
 % \subsection{title}
 % \subsection{title}[location]
 \RenewDocumentCommand{\subsection}{m o}{%
+  \vspace{-4mm}%
   \begingroup%
   \vspace{\parskip}
   \normalsize%
@@ -106,6 +108,7 @@
   \noindent\textbf{#1}\IfValueT{#2}{\hspace*{\fill}#2}%
   \par%
   \endgroup%
+  \vspace{-2mm}%
 }
 
 % \printdate{date}
@@ -127,10 +130,14 @@
 \renewcommand{\maketitle}{%
   \clearpage%
   \begin{adjustwidth}{\dimexpr\Gm@rmargin-\Gm@lmargin\relax}{}
-    \begin{minipage}[c]{.3\linewidth}
-      \scalebox{1.2}{\Huge\@name}%
-    \end{minipage}%
-    \begin{minipage}[c]{.7\linewidth}
+    %\fbox
+    %{
+    \begin{minipage}[c]{.4\textwidth}
+      \scalebox{1.0}{\Huge\@name}%
+	    \@researchinterest
+    \end{minipage}
+    %}
+    \begin{minipage}[c]{.6\textwidth}
       \begin{flushright}
         \ifthenelse{\isundefined{\@address}}{}{%
           \@address \\%
@@ -161,7 +168,7 @@
         }%
       \end{flushright}
     \end{minipage}
-    \vspace{2ex}%
+    \vspace{-1ex}%
     \par\vspace{-.5\ht\strutbox}\noindent\hrulefill\par%
   \end{adjustwidth}
 }
@@ -253,6 +260,7 @@
   }
 }
 
+\renewcommand*{\bibfont}{\footnotesize}
 \renewcommand*{\mkbibnamegiven}[1]{\ifitemannotation{highlight}{\mkbibbold{#1}}{#1}}
 \renewcommand*{\mkbibnamefamily}[1]{\ifitemannotation{highlight}{\mkbibbold{#1}}{#1}}
 \renewcommand*{\mkbibnameprefix}[1]{\ifitemannotation{highlight}{\mkbibbold{#1}}{#1}}

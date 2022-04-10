@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    if: "contains(github.event.head_commit.message, 'CICV')"
+    if: "contains(github.event.head_commit.message, 'CICV2P')"
     runs-on: ubuntu-latest
     steps:
 
@@ -20,12 +20,12 @@ jobs:
     - name: Compile CV
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: cv-n-pages.tex
+        root_file: cv-two-pages.tex
         working_directory: tex
 
     - name: Check pdf files
       run: |
-        file tex/cv-n-pages.pdf | grep -q ' PDF '
+        file tex/cv-two-pages.pdf | grep -q ' PDF '
 
     - name: Upload cv.pdf
       run: |
@@ -39,9 +39,9 @@ jobs:
         chmod 600 ~/.ssh/id_ed25519
         git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
         git clone --depth=1 --branch generated-pdfs git@github.com:mxochicale/cv.git "$GITHUB_WORKSPACE/deploy"
-        cp -f tex/cv-n-pages.pdf "$GITHUB_WORKSPACE/deploy/cv-n-pages.pdf"
+        cp -f tex/cv-two-pages.pdf "$GITHUB_WORKSPACE/deploy/cv-two-pages.pdf"
         cd "$GITHUB_WORKSPACE/deploy"
-        git add cv-n-pages.pdf
+        git add cv-two-pages.pdf
         git commit -m github.event.head_commit.message
         git push
 
