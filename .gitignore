@@ -22,3 +22,6 @@
 **/*.blg
 **/*.out
 **/*.run.xml
+
+##/png images
+**/output-*.png
