@@ -1,0 +1,49 @@
+name: CICVNP
+on:
+  push:
+    branches:
+      - no-main
+      - 6-cv-jan-2021
+      - 08-march2021
+      - 10-oct2021
+      - 12-cvmarch2022
+
+jobs:
+  build:
+    if: "contains(github.event.head_commit.message, 'CICVNP')"
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Set up Git repository
+      uses: actions/checkout@v1
+
+    - name: Compile CV
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: cv-n-pages.tex
+        working_directory: tex
+
+    - name: Check pdf files
+      run: |
+        file tex/cv-n-pages.pdf | grep -q ' PDF '
+
+    - name: Upload cv.pdf
+      run: |
+        # configure git
+        git config --global user.name "mxochicale"
+        git config --global user.email "perez.xochicale@gmail.com"
+        # setup ssh
+        mkdir ~/.ssh
+        chmod 700 ~/.ssh
+        echo "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+        git clone --depth=1 --branch generated-pdfs git@github.com:mxochicale/cv.git "$GITHUB_WORKSPACE/deploy"
+        cp -f tex/cv-n-pages.pdf "$GITHUB_WORKSPACE/deploy/cv-n-pages.pdf"
+        cd "$GITHUB_WORKSPACE/deploy"
+        git add cv-n-pages.pdf
+        git commit -m github.event.head_commit.message
+        git push
+
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}

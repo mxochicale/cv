@@ -16,14 +16,19 @@ RM = rm -f
 EVINCE = evince
 
 ##Project name
-PROJNAME=main
+PROJNAMENP=cv-n-pages
+PROJNAMETP=cv-two-pages
 
 ## Rules
-$(PROJNAME).pdf: $(PROJNAME).tex
-	$(LATEXMK) -pdf -pdflatex="pdflatex -shell-escape -synctex=1 -file-line-error %O %S" $<
+TwoPages: $(PROJNAMETP).tex
+	$(LATEXMK) -pdf -pdflatex="pdflatex -synctex=1 -file-line-error %O %S" $<
+	$(EVINCE) $(PROJNAMETP).pdf
 
-view:
-	$(EVINCE) $(PROJNAME).pdf
+NPages: $(PROJNAMENP).tex
+	$(LATEXMK) -pdf -pdflatex="pdflatex -synctex=1 -file-line-error %O %S" $<
+	$(EVINCE) $(PROJNAMENP).pdf
+
+#view:	
 
 mostlyclean:
 	$(LATEXMK) -silent -C

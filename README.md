@@ -1,13 +1,14 @@
-# My Curriculum Vitae :scroll: 
-[![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv.pdf)
+# :scroll: My Curriculum Vitae (April 2022)
+[![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
-My CV is written in LaTeX and it has been built using Ubuntu 20.04x64 OS with [texlive/2020](https://github.com/mxochicale/latex/tree/master/installation) in a local machine or [github action CI](https://github.com/free-cortex/framework/tree/main/workflow) in the cloud. 
+My CV is written in LaTeX and it is built locally in Ubuntu 20.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
 Refer to [README](tex/README.md) for detailed instructions on local and CI latex built. 
 
 ## Clone repository
-After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md) with few extra notes.
+After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md).
 You can then clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
+mkdir -p $HOME/repositories/ && cd $HOME/repositories/
 git clone git@github.com:mxochicale/cv.git
 ``` 
 

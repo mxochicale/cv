@@ -1,1 +1,1 @@
-make clean && make && evince main.pdf
+make clean && make $1
