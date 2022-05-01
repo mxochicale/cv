@@ -1,4 +1,4 @@
-# CV
+# Building CV
 
 ## tex built with texlive
 Open terminal and run:
