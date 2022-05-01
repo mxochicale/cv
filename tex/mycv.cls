@@ -54,7 +54,7 @@
 \geometry{
   a4paper,
   top=1cm,
-  bottom=1cm,
+  bottom=3mm,
   left=1.5cm, %% Margin from main text to the left side of the
   right=1.5cm,
   includefoot,
