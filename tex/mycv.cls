@@ -53,8 +53,8 @@
 \RequirePackage[strict]{changepage}
 \geometry{
   a4paper,
-  top=1cm,
-  bottom=3mm,
+  top=10mm, %% Top margin makes a bit of space in the page!
+  bottom=10mm, %% Bottom margin makes a bit of space in the page!
   left=1.5cm, %% Margin from main text to the left side of the
   right=1.5cm,
   includefoot,
@@ -179,6 +179,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhfoffset[l]{\dimexpr\Gm@lmargin-\Gm@rmargin\relax}
+%%Commenting the following three lines create a bit of more space in the page
 \fancyfoot[L]{\textcolor{Gray}{\@date}}
 \fancyfoot[C]{\textcolor{Gray}{\@name~~~$\cdot$~~~Curriculum Vitae}}
 \fancyfoot[R]{\textcolor{Gray}{\thepage}}
