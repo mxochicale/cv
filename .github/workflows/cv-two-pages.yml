@@ -10,6 +10,7 @@ on:
       - 15-may2022
       - 15-minor-changes
       - 18-june2022
+      - 18-cv_june2022
 
 jobs:
   build:
