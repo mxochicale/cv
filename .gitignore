@@ -11,7 +11,6 @@
 **/*.fls
 **/*.log
 **/*.nav
-**/tex/main.pdf
 **/*.snm
 **/*.synctex.gz
 **/*.toc
@@ -22,6 +21,8 @@
 **/*.blg
 **/*.out
 **/*.run.xml
+**/tex/main.pdf
+**/tex/cv-two-pages.pdf
 
 ##/png images
 **/output-*.png

@@ -1,4 +1,4 @@
-# :scroll: My Curriculum Vitae (June 2022)
+# :scroll: My Curriculum Vitae (November 2022)
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 My CV is written in LaTeX and it is built locally in Ubuntu 20.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
@@ -8,7 +8,7 @@ Refer to [README](tex/README.md) for detailed instructions on local and CI latex
 After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md).
 You can then clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
-mkdir -p $HOME/repositories/ && cd $HOME/repositories/
+mkdir -p $HOME/repositories/mxochicale && cd $HOME/repositories/mxochicale
 git clone git@github.com:mxochicale/cv.git
 ``` 
 
@@ -27,5 +27,5 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
 * [How to write a LaTeX class file and design your own CV](https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1))
 
 ## Contact and issue report
-If you have specific questions about the content of this repository, you can contact [Miguel Xochicale](mailto:miguel.xochicale@kcl.ac.uk?subject="[cv]").  
-If your question might be relevant to other people, please instead [open an issue](https://github.com/mxochicale/cv/issues).  
+If you have specific questions about the content of this repository, you can contact [Miguel Xochicale](mailto:m.xochicale@ucl.ac.uk?subject="[cv]").    
+If your question might be relevant to other people, please instead [open an issue](https://github.com/mxochicale/cv/issues).

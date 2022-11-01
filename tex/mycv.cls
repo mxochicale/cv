@@ -33,7 +33,7 @@
 \RequirePackage[table,dvipsnames]{xcolor}
 
 % Icons
-\RequirePackage{fontawesome}
+% \RequirePackage{fontawesome}
 
 % hyperref setting
 %\RequirePackage[a-1b]{pdfx}
@@ -150,7 +150,7 @@
         }%
         \ifthenelse{\isundefined{\@email}}{}{%
           \ifbool{isstart}{\setbool{isstart}{false}}{~~$\cdot$~~}%
-          \href{mailto:\@email}{\faIcon{envelope}~\@email}%
+          \href{mailto:\@email}{\faEnvelope~\@email}%
         }%
         \ifthenelse{\isundefined{\@mobile} \AND \isundefined{\@email}}{}{\\}%
         \setbool{isstart}{true}%
