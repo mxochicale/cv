@@ -3,7 +3,7 @@
 ## tex built with texlive
 Open terminal and run:
 ```
-cd $HOME/repositories/cv/tex
+cd $HOME/repositories/mxochicale/cv/tex
 bash localbuilt.sh TwoPages 
 bash localbuilt.sh NPages 
 ```
