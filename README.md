@@ -1,7 +1,7 @@
-# :scroll: My Curriculum Vitae (November 2022)
+# :scroll: My Curriculum Vitae (February 2022)
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
-My CV is written in LaTeX and it is built locally in Ubuntu 20.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
+My CV is written in LaTeX and it is built locally in Ubuntu 22.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
 Refer to [README](tex/README.md) for detailed instructions on local and CI latex built. 
 
 ## Clone repository
