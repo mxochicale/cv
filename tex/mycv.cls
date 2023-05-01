@@ -53,12 +53,16 @@
 \RequirePackage[strict]{changepage}
 \geometry{
   a4paper,
-  top=10mm, %% Top margin makes a bit of space in the page!
-  bottom=10mm, %% Bottom margin makes a bit of space in the page!
+  top=5mm, %% Top margin makes a bit of space in the page!
+  bottom=2mm, %% Bottom margin makes a bit of space in the page!
   left=10mm, %% Margin from main text to the left side of the
   right=10mm,
-  includefoot,
   heightrounded,
+  includefoot,
+  footskip=2.5mm,
+%   textheight=40cm, %%
+%   showframe %% UNCOMMENT THIS LINE TO draw the page layout
+% See other parameters https://www.overleaf.com/learn/latex/Page_size_and_margins
 }
 
 % List setting
@@ -179,10 +183,10 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhfoffset[l]{\dimexpr\Gm@lmargin-\Gm@rmargin\relax}
-%%Commenting the following three lines create a bit of more space in the page
-\fancyfoot[L]{\textcolor{Gray}{\@date}}
-\fancyfoot[C]{\textcolor{Gray}{\@name~~~$\cdot$~~~Curriculum Vitae}}
-\fancyfoot[R]{\textcolor{Gray}{\thepage}}
+%%Comment the following three lines create a bit of more space in the page
+\fancyfoot[L]{\textcolor{Gray}{\scriptsize\@date}}
+\fancyfoot[C]{\textcolor{Gray}{\scriptsize\@name~~~$\cdot$~~~Curriculum Vitae}}
+\fancyfoot[R]{\textcolor{Gray}{\scriptsize\thepage}}
 
 % Publication
 \RequirePackage[
