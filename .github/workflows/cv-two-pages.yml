@@ -14,6 +14,7 @@ on:
       - 21-november2022
       - 23-feb2023
       - 25-march2023
+      - 27-may2023
 
 jobs:
   build:
@@ -22,7 +23,7 @@ jobs:
     steps:
 
     - name: Set up Git repository
-      uses: actions/checkout@v1
+      uses: actions/checkout@v3
 
     - name: Compile CV
       uses: xu-cheng/latex-action@v2
