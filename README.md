@@ -1,4 +1,4 @@
-# :scroll: My Curriculum Vitae (updated on 10th of May 2023)
+# :scroll: My Curriculum Vitae (updated on 1st July 2023)
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/Built-TeX-CV/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 My CV is written in LaTeX and it is built locally in Ubuntu 22.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and remotely with [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
@@ -12,9 +12,10 @@ mkdir -p $HOME/repositories/mxochicale && cd $HOME/repositories/mxochicale
 git clone git@github.com:mxochicale/cv.git
 ``` 
 
-## Licence and Citation 
+## Licence and Citation
 This CV template is under Creative Commons Attribution-Share Alike license [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/). 
 Hence, you are free to reuse it and modify it as much as you want and as long as you cite [my CV](https://github.com/mxochicale/cv) as the original reference and you re-share your CV, or similar work, under the same terms.
+
 **NOTE** All the personal data under the path ([tex/](tex/)) is owned by Miguel Xochicale. All rights reserved.
 
 ## References
