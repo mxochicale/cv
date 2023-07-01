@@ -16,6 +16,7 @@ on:
       - 25-march2023
       - 27-may2023
       - 27-minor-updates-may2023
+      - 27-july2023
 
 jobs:
   build:
