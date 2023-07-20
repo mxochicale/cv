@@ -2,7 +2,7 @@ name: CICV2P
 on:
   push:
     branches:
-      - no-main
+      - main
       - 6-cv-jan-2021
       - 08-march2021
       - 10-oct2021
