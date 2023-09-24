@@ -55,8 +55,8 @@
   a4paper,
   top=5mm, %% Top margin makes a bit of space in the page!
   bottom=2mm, %% Bottom margin makes a bit of space in the page!
-  left=10mm, %% Margin from main text to the left side of the
-  right=10mm,
+  left=5mm, %% Margin from main text to the left side of the
+  right=5mm,
   heightrounded,
   includefoot,
   footskip=2.5mm,
