@@ -23,6 +23,7 @@
 **/*.run.xml
 **/tex/main.pdf
 **/tex/cv-two-pages.pdf
+**input.pdf
 
 ##/png images
 **/output-*.png

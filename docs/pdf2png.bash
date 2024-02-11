@@ -7,8 +7,12 @@
 
 
 wget https://github.com/mxochicale/cv/raw/generated-pdfs/cv-two-pages.pdf
+#cp ../tex/cv-two-pages.pdf .
+
 mv cv-two-pages.pdf input.pdf
-convert -background white -alpha remove -alpha off -density 500 input.pdf -quality 300 output.png
+DENSITY=100 #500
+QUALITY=500 #300
+convert -background white -alpha remove -alpha off -density ${DENSITY} input.pdf -quality ${QUALITY} page.png
 rm *.pdf
 #ALTERNATIVES
 #convert cv-two-pages.pdf cv-two-pages.png

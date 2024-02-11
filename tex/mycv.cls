@@ -97,8 +97,8 @@
 % Custom styles
 \RequirePackage{titlesec}
 %\titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
-\titleformat{\section}{\LARGE\scshape\bf}{}{-2.5mm}{}
-\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.0cm\relax}{1\parskip}{0.1cm}
+\titleformat{\section}{\Large\scshape\bf}{}{-2.5mm}{}
+\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.0cm\relax}{1\parskip}{0.075cm}
 
 % \subsection{title}
 % \subsection{title}[location]
