@@ -1,5 +1,5 @@
 # :scroll: My Curriculum Vitae 
-> Updated on February 2024 
+## Last update of my CV was 11 February 2024 
 
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/CICV2P/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
