@@ -5,8 +5,8 @@
 My Curriculum Vitae (CV) is written in LaTeX and it is built locally in Ubuntu 22.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and remotely with [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
 Refer to [README](tex/README.md) for detailed instructions on local and remote latex built. 
 
-[<img src="docs/page-0.png" width="300">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
-[<img src="docs/page-1.png" width="300">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+[<img src="docs/page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+[<img src="docs/page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 
 ## Clone repository
