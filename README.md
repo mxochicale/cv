@@ -1,12 +1,12 @@
-# :scroll: My Curriculum Vitae (11 February 2024)
+# :scroll: My Curriculum Vitae (11th February 2024)
 
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/CICV2P/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 My Curriculum Vitae (CV) is written in LaTeX and it is built locally in Ubuntu 22.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and remotely with [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
 Refer to [README](tex/README.md) for detailed instructions on local and remote latex built. 
 
-[<img src="docs/page-0.png" width="150">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
-[<img src="docs/page-1.png" width="150">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+[<img src="docs/page-0.png" width="300">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+[<img src="docs/page-1.png" width="300">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 
 ## Clone repository
@@ -35,5 +35,5 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
 ## Contact and issue report
 
 Happy to touch base, just drop me an [e-mail](mailto:m.xochicale@ucl.ac.uk?subject="[cv]").
-If you have questions relavant ot this repo, please instead [open an issue](https://github.com/mxochicale/cv/issues).
+If you have questions or issues relavant to this repo, please instead [open an issue](https://github.com/mxochicale/cv/issues).
 
