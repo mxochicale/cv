@@ -20,6 +20,7 @@ on:
       - 30-20thjuly2023
       - 33-sep2023
       - 35-feb2024
+      - 37-aug2024
 
 jobs:
   build:
