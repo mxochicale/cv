@@ -11,7 +11,6 @@ Download my latest CV by clicking on the following pages.
 [<img src="docs/page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 [<img src="docs/page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
-
 ## Clone repository
 After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md).
 You can then clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
@@ -36,7 +35,5 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
 * [How to write a LaTeX class file and design your own CV](https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1))
 
 ## Contact and issue report
-
 Happy to touch base, just drop me an [e-mail](mailto:m.xochicale@ucl.ac.uk?subject="[cv]").
 If you have questions or issues relavant to this repo, please instead [open an issue](https://github.com/mxochicale/cv/issues).
-
