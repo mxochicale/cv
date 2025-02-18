@@ -5,7 +5,7 @@
 # References 
 # https://superuser.com/questions/185880/how-to-convert-a-pdf-document-to-png
 
-#wget https://github.com/mxochicale/cv/raw/generated-pdfs/cv-two-pages.pdf
+sudo apt-get install -y imagemagick
 cp ../tex/cv-two-pages.pdf .
 
 mv cv-two-pages.pdf input.pdf

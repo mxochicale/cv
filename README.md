@@ -1,15 +1,32 @@
-# :scroll: My Curriculum Vitae (August 2024)
+# :scroll: My Curriculum Vitae (Feb 2024)
 
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/CICV2P/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 My Curriculum Vitae (CV) is written in LaTeX and it is built locally in Ubuntu 22.04x64 OS with [texlive](https://github.com/mxochicale/latex/tree/master/installation) and remotely with [github action CI](https://github.com/free-cortex/framework/tree/main/workflow). 
-Refer to [README](tex/README.md) for detailed instructions on local and remote latex built. 
+Refer to [README](tex/README.md) for detailed instructions on local and remote latex build.
 
 ## My CV
 Download my latest CV by clicking on the following pages.
 
 [<img src="docs/page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 [<img src="docs/page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+
+
+## Build CV locally
+Open a terminal to build cv locally
+```bash
+cd $HOME/repositories/mxochicale/cv/tex
+bash localbuilt.sh TwoPages 
+make clean #clean project
+```
+For further details see [here](tex)
+
+## Commit and push changes
+```bash
+git add .
+git commit -m ':tada: version monthYEAR is ready CICV2P #0'
+git push oring <FEATURE_BRANCH>
+```
 
 ## Clone repository
 After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md).
