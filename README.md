@@ -21,6 +21,13 @@ make clean #clean project
 ```
 For further details see [here](tex)
 
+## Commit and push changes
+```bash
+git add .
+git commit -m ':tada: version monthYEAR is ready CICV2P #0'
+git push oring <FEATURE_BRANCH>
+```
+
 ## Clone repository
 After generating your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md).
 You can then clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
