@@ -22,6 +22,7 @@ on:
       - 35-feb2024
       - 37-aug2024
       - 39-feb2025
+      - 42-june2025
 
 jobs:
   build:
