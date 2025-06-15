@@ -6,7 +6,8 @@ My Curriculum Vitae (CV) is written in LaTeX and it is built locally in Ubuntu 2
 Refer to [README](tex/README.md) for detailed instructions on local and remote latex build.
 
 ## My CV
-Download my latest CV by clicking on the following pages.
+Download my latest CV by clicking on the following pages. 
+Alternatively, you can simply view the PNG pages: [page-0](docs/page-0.png) and [page-1](docs/page-0.png).
 
 [<img src="docs/page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 [<img src="docs/page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
@@ -20,6 +21,12 @@ bash localbuilt.sh TwoPages
 make clean #clean project
 ```
 For further details see [here](tex)
+
+## pdf2png
+```bash
+cd $HOME/repositories/mxochicale/cv/docs
+bash pdf2png.bash
+```
 
 ## Commit and push changes
 ```bash
