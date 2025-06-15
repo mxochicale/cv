@@ -1,4 +1,4 @@
-# :scroll: My Curriculum Vitae (Feb 2024)
+# :scroll: My Curriculum Vitae (June 2025)
 
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/CICV2P/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
@@ -6,7 +6,8 @@ My Curriculum Vitae (CV) is written in LaTeX and it is built locally in Ubuntu 2
 Refer to [README](tex/README.md) for detailed instructions on local and remote latex build.
 
 ## My CV
-Download my latest CV by clicking on the following pages.
+Download my latest CV by clicking on the following pages. 
+Alternatively, you can simply view the PNG pages: [page-0](docs/page-0.png) and [page-1](docs/page-0.png).
 
 [<img src="docs/page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 [<img src="docs/page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
@@ -21,11 +22,17 @@ make clean #clean project
 ```
 For further details see [here](tex)
 
+## pdf2png
+```bash
+cd $HOME/repositories/mxochicale/cv/docs
+bash pdf2png.bash
+```
+
 ## Commit and push changes
 ```bash
 git add .
 git commit -m ':tada: version monthYEAR is ready CICV2P #0'
-git push oring <FEATURE_BRANCH>
+git push origin <FEATURE_BRANCH>
 ```
 
 ## Clone repository
@@ -52,5 +59,5 @@ Hence, you are free to reuse it and modify it as much as you want and as long as
 * [How to write a LaTeX class file and design your own CV](https://www.overleaf.com/learn/latex/How_to_write_a_LaTeX_class_file_and_design_your_own_CV_(Part_1))
 
 ## Contact and issue report
-Happy to touch base, just drop me an [e-mail](mailto:m.xochicale@ucl.ac.uk?subject="[cv]").
+Happy to touch base, just drop me an [e-mail](mailto:perez.xochicale@gmail.com?subject="[cv]").
 If you have questions or issues relavant to this repo, please instead [open an issue](https://github.com/mxochicale/cv/issues).
