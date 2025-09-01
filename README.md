@@ -28,7 +28,7 @@ cd $HOME/repositories/mxochicale/cv/docs
 bash pdf2png.bash
 ```
 
-## Commit and push changes
+## (3) Commit and push changes
 ```bash
 git add .
 git commit -m ':tada: version monthYEAR is ready CICV2P #0'
