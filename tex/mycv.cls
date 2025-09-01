@@ -54,8 +54,8 @@
 \geometry{
   a4paper,
   top=5mm, %% Top margin makes a bit of space in the page!
-  bottom=2mm, %% Bottom margin makes a bit of space in the page!
-  left=5mm, %% Margin from main text to the left side of the
+  bottom=3mm, %% Bottom margin makes a bit of space in the page!
+  left=6mm, %% Margin from main text to the left side of the
   right=5mm,
   heightrounded,
   includefoot,
@@ -98,12 +98,12 @@
 \RequirePackage{titlesec}
 %\titleformat{\section}[leftmargin]{\large\scshape\sffamily}{}{0cm}{}
 \titleformat{\section}{\Large\scshape\bf}{}{-2.5mm}{}
-\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.0cm\relax}{1\parskip}{0.075cm}
+\titlespacing{\section}{\dimexpr\Gm@lmargin-\Gm@rmargin-0.0cm\relax}{1\parskip}{0.095cm}
 
 % \subsection{title}
 % \subsection{title}[location]
 \RenewDocumentCommand{\subsection}{m o}{%
-  \vspace{-4mm}%
+  \vspace{-3mm}%
   \begingroup%
   \vspace{\parskip}
   \normalsize%
