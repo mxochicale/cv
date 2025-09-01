@@ -1,4 +1,4 @@
-# :scroll: My Curriculum Vitae (June 2025)
+# :scroll: My Curriculum Vitae (Sep 2025)
 
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/CICV2P/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
@@ -7,13 +7,13 @@ Refer to [README](tex/README.md) for detailed instructions on local and remote l
 
 ## My CV
 Download my latest CV by clicking on the following pages. 
-Alternatively, you can simply view the PNG pages: [page-0](docs/page-0.png) and [page-1](docs/page-0.png).
+Alternatively, you can simply view the PNG pages: [page-0](docs/cv-page-0.png) and [page-1](docs/cv-page-1.png).
 
-[<img src="docs/page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
-[<img src="docs/page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+[<img src="docs/cv-page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
+[<img src="docs/cv-page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 
-## Build CV locally
+## (1) Build CV locally
 Open a terminal to build cv locally
 ```bash
 cd $HOME/repositories/mxochicale/cv/tex
@@ -22,7 +22,7 @@ make clean #clean project
 ```
 For further details see [here](tex)
 
-## pdf2png
+## (2) pdf2png
 ```bash
 cd $HOME/repositories/mxochicale/cv/docs
 bash pdf2png.bash
