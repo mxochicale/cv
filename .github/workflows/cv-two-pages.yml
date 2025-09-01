@@ -1,28 +1,7 @@
 name: CICV2P
 on:
   push:
-    branches:
-      - main
-      - 6-cv-jan-2021
-      - 08-march2021
-      - 10-oct2021
-      - 12-cvmarch2022
-      - 15-may2022
-      - 15-minor-changes
-      - 18-june2022
-      - 18-cv_june2022
-      - 21-november2022
-      - 23-feb2023
-      - 25-march2023
-      - 27-may2023
-      - 27-minor-updates-may2023
-      - 30-july2023
-      - 30-20thjuly2023
-      - 33-sep2023
-      - 35-feb2024
-      - 37-aug2024
-      - 39-feb2025
-      - 42-june2025
+    branches: ['**']
 
 jobs:
   build:
