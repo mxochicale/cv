@@ -1,4 +1,4 @@
-# :scroll: My Curriculum Vitae (Sep 2025)
+# :scroll: My Curriculum Vitae (Dec 2025)
 
 [![GitHub Actions Status](https://github.com/mxochicale/cv/workflows/CICV2P/badge.svg)](https://github.com/mxochicale/cv/actions) [![CV](https://img.shields.io/badge/read_my-CV-blue.svg)](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
