@@ -37,8 +37,8 @@ bash pdf2png.bash
 
 ## (4) Commit and push changes
 ```bash
-git add .
-git commit -m 'updates DAY-MONTH-YEAR CICV2P #0'
+export date=$(date)
+git commit -am "updates $date #0"
 git push origin <FEATURE_BRANCH>
 ```
 
