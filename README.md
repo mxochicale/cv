@@ -22,16 +22,23 @@ make clean #clean project
 ```
 For further details see [here](tex)
 
-## (2) pdf2png
+## (2) Commit and push changes
+```bash
+export date=$(date)
+git commit -am "updates $date CICV2P #0"
+git push origin <FEATURE_BRANCH>
+```
+
+## (3) pdf2png
 ```bash
 cd $HOME/repositories/mxochicale/cv/docs
 bash pdf2png.bash
 ```
 
-## (3) Commit and push changes
+## (4) Commit and push changes
 ```bash
-git add .
-git commit -m ':tada: version monthYEAR is ready CICV2P #0'
+export date=$(date)
+git commit -am "updates $date #0"
 git push origin <FEATURE_BRANCH>
 ```
 

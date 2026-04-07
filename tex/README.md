@@ -13,13 +13,8 @@ make clean
 ```
 
 ## tex built with github action 
-1. Edit .github/worflows/cv-two-pages.yml and add branch name.
-```
-vim .github/workflows/cv-two-pages.yml
-```
-
-2. To make use of the CI tex build, please make use of "CICV2P" in the commit message: 
-```
+To make use of the CI tex build, please make use of "CICV2P" in the commit message: 
+```bash
 git commit -m ':tada: version monthYEAR is ready CICV2P #0'
 ```
 
