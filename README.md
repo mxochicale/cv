@@ -13,12 +13,22 @@ Alternatively, you can simply view the PNG pages: [page-0](docs/cv-page-0.png) a
 [<img src="docs/cv-page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
 
+## (0) Dependencies
+* latex > https://github.com/mxochicale/tools/tree/main/latex/installation
+```bash
+sudo apt install texlive-fonts-extra
+```
+
 ## (1) Build CV locally
 Open a terminal to build cv locally
 ```bash
 cd $HOME/repositories/mxochicale/cv/tex
-bash localbuilt.sh TwoPages 
-make clean #clean project
+make two 
+make view
+#----
+make npages
+make view-npages
+make distclean #clean project
 ```
 For further details see [here](tex)
 
