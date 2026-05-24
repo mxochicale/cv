@@ -4,12 +4,15 @@
 Open terminal and run:
 ```bash
 cd $HOME/repositories/mxochicale/cv/tex
-make two
+make two 
 make view
+#----
+make npages
+make view-npages
 ```
 to clean project, then type:
 ```bash
-make clean
+make distclean #clean project
 ```
 
 ## tex built with github action 

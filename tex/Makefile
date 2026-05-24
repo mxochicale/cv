@@ -47,9 +47,13 @@ two: $(TWO_PAGE).tex
 npages: $(N_PAGE).tex
 > $(LATEXMK) $(LATEX_FLAGS) $<
 
-# View PDF
+# View two-page PDF
 view:
 > $(VIEWER) $(TWO_PAGE).pdf >/dev/null 2>&1 &
+
+# View n-page PDF
+view-npages:
+> $(VIEWER) $(N_PAGE).pdf >/dev/null 2>&1 &
 
 # Clean auxiliary files
 clean:
