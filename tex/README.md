@@ -4,8 +4,8 @@
 Open terminal and run:
 ```bash
 cd $HOME/repositories/mxochicale/cv/tex
-bash localbuilt.sh TwoPages 
-bash localbuilt.sh NPages 
+make two
+make view
 ```
 to clean project, then type:
 ```bash
