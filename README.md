@@ -14,8 +14,8 @@ Alternatively, you can simply view the PNG pages: [page-0](docs/cv-page-0.png) a
 
 
 ## (0) Dependencies
+* latex > https://github.com/mxochicale/tools/tree/main/latex/installation
 ```bash
-# latex > https://github.com/mxochicale/tools/tree/main/latex/installation
 sudo apt install texlive-fonts-extra
 ```
 
