@@ -23,6 +23,8 @@
 **/*.run.xml
 **/tex/main.pdf
 **/tex/cv-two-pages.pdf
+**/tex/cv-n-pages.pdf
+**/tex/cv-n-pages.bcf-SAVE-ERROR
 **input.pdf
 
 ##/png images
