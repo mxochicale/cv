@@ -39,11 +39,14 @@ jobs:
         run: |
           set -euo pipefail
 
+          GH_PAT_CLEAN="$(printf '%s' "$GH_PAT" | tr -d '\r\n')"
+
           DEPLOY_DIR="$GITHUB_WORKSPACE/deploy"
           # Use the PAT in the HTTPS URL (scoped to this clone only).
+
           git clone --depth=1 \
             --branch generated-pdfs \
-            "https://x-access-token:${GH_PAT}@github.com/${REPO}.git" \
+            "https://x-access-token:${GH_PAT_CLEAN}@github.com/${REPO}.git" \
             "$DEPLOY_DIR"
 
           cp -f tex/cv-two-pages.pdf "$DEPLOY_DIR/cv-two-pages.pdf"
