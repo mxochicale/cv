@@ -1,44 +1,69 @@
 name: CICV2P
+
 on:
   push:
     branches: ['**']
 
+# Only need to read the source repo with the default GITHUB_TOKEN.
+permissions:
+  contents: read
+
 jobs:
   build:
-    if: "contains(github.event.head_commit.message, 'CICV2P')"
+    if: contains(github.event.head_commit.message, 'CICV2P')
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v6
+        with:
+          # Don't leak the default token into git config; we'll use the PAT.
+          persist-credentials: false
 
-    - name: Set up Git repository
-      uses: actions/checkout@v3
+      - name: Compile CV
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: cv-two-pages.tex
+          working_directory: tex
 
-    - name: Compile CV
-      uses: xu-cheng/latex-action@v2
-      with:
-        root_file: cv-two-pages.tex
-        working_directory: tex
+      - name: Check PDF file
+        run: |
+          file tex/cv-two-pages.pdf | grep -q ' PDF '
 
-    - name: Check pdf files
-      run: |
-        file tex/cv-two-pages.pdf | grep -q ' PDF '
+      - name: Upload cv.pdf to generated-pdfs branch
+        env:
+          # PAT with `repo` (classic) or `Contents: Read and write` (fine-grained)
+          GH_PAT: ${{ secrets.PAT_TOKEN }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
 
-    - name: Upload cv.pdf
-      run: |
-        # configure git
-        git config --global user.name "mxochicale"
-        git config --global user.email "perez.xochicale@gmail.com"
-        # setup ssh
-        mkdir ~/.ssh
-        chmod 700 ~/.ssh
-        echo "$DEPLOY_KEY" > ~/.ssh/id_ed25519
-        chmod 600 ~/.ssh/id_ed25519
-        git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
-        git clone --depth=1 --branch generated-pdfs git@github.com:mxochicale/cv.git "$GITHUB_WORKSPACE/deploy"
-        cp -f tex/cv-two-pages.pdf "$GITHUB_WORKSPACE/deploy/cv-two-pages.pdf"
-        cd "$GITHUB_WORKSPACE/deploy"
-        git add cv-two-pages.pdf
-        git commit -m github.event.head_commit.message
-        git push
+          GH_PAT_CLEAN="$(printf '%s' "$GH_PAT" | tr -d '\r\n')"
 
-      env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          DEPLOY_DIR="$GITHUB_WORKSPACE/deploy"
+          # Use the PAT in the HTTPS URL (scoped to this clone only).
+
+          git clone --depth=1 \
+            --branch generated-pdfs \
+            "https://x-access-token:${GH_PAT_CLEAN}@github.com/${REPO}.git" \
+            "$DEPLOY_DIR"
+
+          cp -f tex/cv-two-pages.pdf "$DEPLOY_DIR/cv-two-pages.pdf"
+
+          cd "$DEPLOY_DIR"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Nothing changed? Nothing to do.
+          if git diff --quiet -- cv-two-pages.pdf; then
+            echo "No PDF changes; skipping commit."
+            exit 0
+          fi
+
+          git add cv-two-pages.pdf
+          git commit -m "${COMMIT_MSG}"
+
+          # Pull-and-rebase in case another run pushed in the meantime.
+          git pull --rebase origin generated-pdfs
+          git push origin HEAD:generated-pdfs
