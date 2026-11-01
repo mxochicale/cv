@@ -55,12 +55,6 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Nothing changed? Nothing to do.
-          if git diff --quiet -- cv-two-pages.pdf; then
-            echo "No PDF changes; skipping commit."
-            exit 0
-          fi
-
           git add cv-two-pages.pdf
           git commit -m "${COMMIT_MSG}"
 
