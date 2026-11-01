@@ -15,13 +15,13 @@ jobs:
 
     steps:
       - name: Checkout source repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # Don't leak the default token into git config; we'll use the PAT.
           persist-credentials: false
 
       - name: Compile CV
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: cv-two-pages.tex
           working_directory: tex
