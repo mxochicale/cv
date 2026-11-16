@@ -12,7 +12,6 @@ Alternatively, you can simply view the PNG pages: [page-0](docs/cv-page-0.png) a
 [<img src="docs/cv-page-0.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 [<img src="docs/cv-page-1.png" width="400">](https://github.com/mxochicale/cv/blob/generated-pdfs/cv-two-pages.pdf)
 
-
 ## (0) Dependencies
 * latex > https://github.com/mxochicale/tools/tree/main/latex/installation
 ```bash
